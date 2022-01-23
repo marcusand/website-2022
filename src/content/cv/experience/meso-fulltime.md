@@ -1,0 +1,10 @@
+---
+title: Web and Application Developer
+subtitle: MESO Digital Interiors GmbH
+url: https://meso.design
+startDate: 2020-05-01
+endDate:
+location: Frankfurt am Main, Germany
+---
+
+Worked as a computer programmer for the MetaCortex software company. Had a social security number. Sold contraband programming and hacks under the alias Neo.

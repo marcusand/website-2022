@@ -1,0 +1,13 @@
+name: Marcus Schreiter
+email: mail@marcusand.de
+phone: 015228569615
+birthday: 1996-10-11
+location: Frankfurt am Main, Germany
+intro: Lorem Ipsum
+proficiencies:
+  - Creative entrepeneurship
+  - Hovercraft piloting
+links:
+  - title: github
+    username: marcusand
+    href: https://github.com/marcusand
