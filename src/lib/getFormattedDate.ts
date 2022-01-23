@@ -1,0 +1,25 @@
+type Format = 'short' | 'long';
+
+export const getFormattedDate = (date: Date, format: Format): string => {
+  const numberStringWithPrefix = (number: number): string => {
+    return number < 10 ? `0${number}` : `${number}`;
+  };
+
+  const dateFormats = {
+    long: (date) => {
+      const dayString = numberStringWithPrefix(date.getDate());
+      const monthString = numberStringWithPrefix(date.getMonth() + 1);
+      const yearString = date.getFullYear();
+
+      return `${dayString}.${monthString}.${yearString}`;
+    },
+    short: (date) => {
+      const monthString = numberStringWithPrefix(date.getMonth() + 1);
+      const yearString = date.getFullYear();
+
+      return `${monthString}/${yearString}`;
+    }
+  };
+
+  return dateFormats[format](date);
+};
