@@ -29,3 +29,10 @@
     {/each}
   </ul>
 </header>
+
+<style>
+  ul {
+    list-style-position: inside;
+    list-style-type: '*';
+  }
+</style>

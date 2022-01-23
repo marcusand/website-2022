@@ -36,3 +36,13 @@
     {/each}
   </div>
 </section>
+
+<style>
+  section {
+    --left-column-width: 30%;
+    --right-column-width: 70%;
+
+    margin-top: 3rem;
+    page-break-inside: avoid;
+  }
+</style>

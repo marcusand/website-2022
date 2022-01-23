@@ -1,29 +1,56 @@
 <svelte:head>
-	<title>marcusand</title>
-	<meta name="description" content="personal website of marcusand" />
-	<meta
-		name="keywords"
-		content="marcusand, marcus, software, web, development, personal, website"
-	/>
+  <title>marcusand</title>
+  <meta name="description" content="personal website of marcusand" />
+  <meta
+    name="keywords"
+    content="marcusand, marcus, software, web, development, personal, website"
+  />
 </svelte:head>
 
 <main>
-	<slot />
+  <slot />
 </main>
 
 <style>
-	:global(html),
-	:global(body),
-	:global(#svelte) {
-		margin: 0;
-		padding: 10;
-	}
+  :global(html),
+  :global(body),
+  :global(#svelte) {
+    margin: 0;
+    padding: 0;
+  }
 
-	:global(*) {
-		box-sizing: border-box;
-	}
+  :global(*) {
+    box-sizing: border-box;
+  }
 
-	main {
-		padding: 1rem;
-	}
+  :global(ul),
+  :global(p) {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  @media print {
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+
+    :global(body),
+    :global(main) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  main {
+    margin: 0rem 0rem;
+    padding: 1rem 2rem;
+  }
+
+  @media only screen and (min-width: 1300px) {
+    main {
+      margin: 0rem 15rem;
+    }
+  }
 </style>
