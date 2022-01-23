@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
   import { getFormattedDate } from '$lib/getFormattedDate';
+  import type { Person } from 'src/types';
 
-  import data from '../../content/cv/person.yaml';
+  export let data: Person;
 
   const { name, location, email, links } = data;
-  const birthday = getFormattedDate(new Date(data.birthday), 'long');
+  const birthday = getFormattedDate(data.birthday, 'long');
 </script>
 
 <header>
