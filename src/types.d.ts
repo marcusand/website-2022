@@ -26,3 +26,8 @@ export type Experience = {
   location: string;
   description: string;
 };
+
+export type Skill = {
+  title: string;
+  keywords: Array<string>;
+};
