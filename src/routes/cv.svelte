@@ -9,6 +9,7 @@
   import skills from '../content/cv/skills/index';
 </script>
 
+<h1>CV {personData.name}</h1>
 <Header data={personData} />
 <hr />
 <section>
