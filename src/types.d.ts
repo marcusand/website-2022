@@ -29,5 +29,7 @@ export type Experience = {
 
 export type Skill = {
   title: string;
-  keywords: Array<string>;
+  keywords?: Array<string>;
+  keywordsProfessional?: Array<string>;
+  keywordsSemiProfessional?: Array<string>;
 };

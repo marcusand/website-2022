@@ -1,3 +1,7 @@
 title: Tools
-keywords:
+keywordsProfessional:
   - git
+keywordsSemiProfessional:
+  - docker
+  - gitlab CI/CD pipeline
+  - apache / nginx

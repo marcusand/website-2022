@@ -45,6 +45,10 @@
     text-transform: uppercase;
   }
 
+  :global(h3) {
+    margin-top: 0rem;
+  }
+
   @media print {
     @page {
       size: A4;

@@ -1,6 +1,9 @@
 title: Backend technologies
-keywords:
-  - very good knowledge of node.js
-  - good knowledge of cms systems like wordpress and statamic
-  - good knowledge of php
-  - basic knowledge of mongodb and sql databases
+keywordsProfessional:
+  - node.js
+  - cms systems (wordpress, statamic)
+keywordsSemiProfessional:
+  - php
+  - laravel
+  - express
+  - sql / no-sql databases
