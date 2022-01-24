@@ -7,7 +7,7 @@
 
   const { title, subtitle, location, startDate, endDate, description } = data;
   const start = startDate ? getFormattedDate(startDate, 'short') : '';
-  const end = endDate ? getFormattedDate(endDate, 'short') : '';
+  const end = endDate ? getFormattedDate(endDate, 'short') : 'today';
 </script>
 
 <SectionElement>
