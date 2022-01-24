@@ -15,13 +15,13 @@
   <div class="body">
     <ul class="left">
       <li>{subtitle}</li>
+      <li>{location}</li>
       <li>
         {start}
         -
         {end}
       </li>
-      <li>{location}</li>
     </ul>
-    <div class="right">{description}</div>
+    <div class="right">{@html description}</div>
   </div>
 </SectionElement>
