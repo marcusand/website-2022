@@ -33,8 +33,12 @@
   :global(ul),
   :global(p) {
     margin: 0;
-    list-style-type: none;
     padding-left: 0;
+  }
+
+  :global(li) {
+    list-style-position: inside;
+    list-style-type: '— ';
   }
 
   :global(h1) {
@@ -70,7 +74,7 @@
 
   @media only screen and (min-width: 1300px) {
     main {
-      margin: 0rem 15rem;
+      margin: 0rem 5rem;
     }
   }
 </style>

@@ -18,10 +18,16 @@
       <li>{location}</li>
       <li>
         {start}
-        -
+        —
         {end}
       </li>
     </ul>
     <div class="right">{@html description}</div>
   </div>
 </SectionElement>
+
+<style>
+  li {
+    list-style-type: none;
+  }
+</style>

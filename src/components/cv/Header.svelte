@@ -34,9 +34,4 @@
   header {
     margin: 2rem 0rem;
   }
-
-  ul {
-    list-style-position: inside;
-    list-style-type: '* ';
-  }
 </style>
