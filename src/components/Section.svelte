@@ -1,22 +1,22 @@
-<div class="section-element">
+<div class="section">
   <slot />
 </div>
 
 <style>
-  .section-element {
+  .section {
     margin-top: 2rem;
   }
 
-  :global(.section-element .body) {
+  :global(.section .body) {
     display: flex;
   }
 
-  :global(.section-element .left) {
+  :global(.section .left) {
     width: var(--left-column-width);
     padding-right: 1rem;
   }
 
-  :global(.section-element .right) {
+  :global(.section .right) {
     width: var(--right-column-width);
   }
 </style>

@@ -1,13 +1,13 @@
 <script lang="ts">
   import type { Skill } from 'src/types';
-  import SectionElement from './SectionElement.svelte';
+  import Section from '../Section.svelte';
 
   export let data: Skill;
 
   const { title, keywords, keywordsProfessional, keywordsSemiProfessional } = data;
 </script>
 
-<SectionElement>
+<Section>
   <div class="body">
     <div class="left">
       <h3>{title}</h3>
@@ -41,7 +41,7 @@
       {/if}
     </div>
   </div>
-</SectionElement>
+</Section>
 
 <style>
   .two-col {
