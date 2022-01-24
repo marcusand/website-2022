@@ -1,0 +1,14 @@
+type: 'on-location'
+level: 'professional'
+title: 'Dialogmuseum Frankfurt'
+company: 'MESO Digital Interiors GmbH'
+date: 2021-06-01
+role: 'Application Developer'
+image:
+  file: 'dialogmuseum.jpg'
+  alt: Person interacting with a point of information kiosk
+links:
+  - https://meso.design/en/projects/dialogmuseum-barrier-free-visitor-touchpoints-for-sensory-museum
+description:
+  Opening people’s eyes to the world of those who can’t see – that is the declared goal of Frankfurt’s Dialogmuseum.
+  For its new location, we designed, programmed and constructed two interactive installations for visitor interaction.

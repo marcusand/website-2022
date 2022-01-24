@@ -28,6 +28,9 @@
 
   :global(*) {
     box-sizing: border-box;
+
+    --left-column-width: 30%;
+    --right-column-width: 70%;
   }
 
   :global(ul),
@@ -51,6 +54,11 @@
 
   :global(h3) {
     margin-top: 0rem;
+  }
+
+  :global(section) {
+    margin-top: 4rem;
+    page-break-inside: avoid;
   }
 
   @media print {

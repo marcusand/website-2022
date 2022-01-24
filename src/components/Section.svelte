@@ -4,19 +4,24 @@
 
 <style>
   .section {
-    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
-  :global(.section .body) {
-    display: flex;
-  }
+  @media only screen and (min-width: 900px) {
+    .section {
+      margin-bottom: 2rem;
+    }
+    :global(.section .body) {
+      display: flex;
+    }
 
-  :global(.section .left) {
-    width: var(--left-column-width);
-    padding-right: 1rem;
-  }
+    :global(.section .left) {
+      width: var(--left-column-width);
+      padding-right: 1rem;
+    }
 
-  :global(.section .right) {
-    width: var(--right-column-width);
+    :global(.section .right) {
+      width: var(--right-column-width);
+    }
   }
 </style>

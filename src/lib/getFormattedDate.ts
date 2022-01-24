@@ -1,4 +1,4 @@
-type Format = 'short' | 'long';
+type Format = 'short' | 'long' | 'year';
 
 export const getFormattedDate = (date: Date, format: Format): string => {
   const numberStringWithPrefix = (number: number): string => {
@@ -18,6 +18,9 @@ export const getFormattedDate = (date: Date, format: Format): string => {
       const yearString = date.getFullYear();
 
       return `${monthString}/${yearString}`;
+    },
+    year: (date) => {
+      return date.getFullYear();
     }
   };
 

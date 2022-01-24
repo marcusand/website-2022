@@ -33,3 +33,22 @@ export type Skill = {
   keywordsProfessional?: Array<string>;
   keywordsSemiProfessional?: Array<string>;
 };
+
+type ProjectType = 'web' | 'on-location';
+type ProjectLevel = 'professional' | 'personal';
+type ProjectImage = {
+  file: string;
+  alt: string;
+};
+
+export type Project = {
+  type: ProjectType;
+  level: ProjectLevel;
+  title: string;
+  image: ProjectImage;
+  company?: string;
+  date: Date;
+  role: string;
+  description: string;
+  links: Array<string>;
+};
