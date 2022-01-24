@@ -33,6 +33,6 @@
 <style>
   ul {
     list-style-position: inside;
-    list-style-type: '*';
+    list-style-type: '* ';
   }
 </style>
