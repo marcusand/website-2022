@@ -20,17 +20,24 @@
   :global(html),
   :global(body),
   :global(#svelte) {
+    background: #f6f5f0;
     font-family: Objectivity, sans-serif;
     line-height: 1.25;
     margin: 0;
     padding: 0;
+    overflow-y: hidden !important;
   }
 
   :global(*) {
     box-sizing: border-box;
 
+    --accent-color: #5c9270;
     --left-column-width: 30%;
     --right-column-width: 70%;
+  }
+
+  :global(a) {
+    color: var(--accent-color);
   }
 
   :global(ul),

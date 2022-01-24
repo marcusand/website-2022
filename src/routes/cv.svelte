@@ -3,7 +3,7 @@
   import Experience from '../components/cv/Experience.svelte';
   import Skill from '../components/cv/Skill.svelte';
 
-  import personData from '../content/cv/person.yaml';
+  import personData from '../content/person.yaml';
   import experiences from '../content/cv/experience/index';
   import educations from '../content/cv/education/index';
   import skills from '../content/cv/skills/index';

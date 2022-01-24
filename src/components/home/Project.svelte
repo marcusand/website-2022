@@ -86,7 +86,7 @@
 
   .more {
     text-decoration: underline;
-    color: blue;
+    color: var(--accent-color);
     cursor: pointer;
   }
 
