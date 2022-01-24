@@ -9,9 +9,8 @@
   import skills from '../content/cv/skills/index';
 </script>
 
-<h1>CV {personData.name}</h1>
+<h1>CV</h1>
 <Header data={personData} />
-<hr />
 <section>
   <h2>Experience</h2>
   <div>
@@ -42,7 +41,7 @@
     --left-column-width: 30%;
     --right-column-width: 70%;
 
-    margin-top: 3rem;
+    margin-top: 4rem;
     page-break-inside: avoid;
   }
 </style>

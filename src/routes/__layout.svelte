@@ -12,9 +12,16 @@
 </main>
 
 <style>
+  @font-face {
+    font-family: 'Objectivity';
+    src: url('/fonts/objectivity.medium.otf') format('opentype');
+  }
+
   :global(html),
   :global(body),
   :global(#svelte) {
+    font-family: Objectivity, sans-serif;
+    line-height: 1.25;
     margin: 0;
     padding: 0;
   }
@@ -28,6 +35,14 @@
     margin: 0;
     list-style-type: none;
     padding-left: 0;
+  }
+
+  :global(h1) {
+    text-transform: uppercase;
+  }
+
+  :global(h2) {
+    text-transform: uppercase;
   }
 
   @media print {

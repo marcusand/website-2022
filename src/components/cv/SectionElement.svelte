@@ -4,8 +4,7 @@
 
 <style>
   .section-element {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
   }
 
   :global(.section-element .body) {

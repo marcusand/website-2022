@@ -11,7 +11,7 @@
 <header>
   <ul>
     <li>
-      name is {name}
+      {name}
     </li>
     <li>
       born {birthday}
@@ -31,6 +31,10 @@
 </header>
 
 <style>
+  header {
+    margin: 2rem 0rem;
+  }
+
   ul {
     list-style-position: inside;
     list-style-type: '* ';
