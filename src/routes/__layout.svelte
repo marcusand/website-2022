@@ -33,13 +33,14 @@
   @media print {
     @page {
       size: A4;
-      margin: 10mm;
+      margin: 10mm 5mm;
     }
 
     :global(body),
     :global(main) {
       margin: 0;
       padding: 0;
+      font-size: 0.9rem;
     }
   }
 
