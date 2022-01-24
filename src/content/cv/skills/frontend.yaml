@@ -1,7 +1,10 @@
 title: Frontend technologies
 keywords:
-  - html/css/javascript
+  - html / css
+  - javascript / typescript
   - react.js + redux
   - next.js
-  - nw.js/electon.js
+  - nw.js / electron.js
+  - svelte / sveltekit
   - tailwind.css
+  - react native
