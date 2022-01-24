@@ -25,21 +25,3 @@
     <div class="right">{description}</div>
   </div>
 </SectionElement>
-
-<style>
-  h3 {
-    margin-bottom: 1rem;
-  }
-
-  .body {
-    display: flex;
-  }
-
-  .left {
-    width: var(--left-column-width);
-  }
-
-  .right {
-    width: var(--right-column-width);
-  }
-</style>

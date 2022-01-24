@@ -17,17 +17,3 @@
     </ul>
   </div>
 </SectionElement>
-
-<style>
-  .body {
-    display: flex;
-  }
-
-  .left {
-    width: var(--left-column-width);
-  }
-
-  .right {
-    width: var(--right-colum-width);
-  }
-</style>
