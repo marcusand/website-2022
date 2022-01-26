@@ -96,7 +96,7 @@
     :global(main) {
       background: white;
       font-family: Objectivity, sans-serif;
-      font-size: 9pt;
+      font-size: 8pt;
       padding: 0;
     }
   }
