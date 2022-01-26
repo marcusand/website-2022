@@ -1,6 +1,7 @@
 <script lang="ts">
+  import type { Experience } from '$content/types';
+
   import { getFormattedDate } from '$lib/getFormattedDate';
-  import type { Experience } from 'src/types';
   import SectionElement from '../SectionElement.svelte';
 
   export let data: Experience;

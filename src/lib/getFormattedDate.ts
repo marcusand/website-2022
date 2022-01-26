@@ -6,21 +6,21 @@ export const getFormattedDate = (date: Date, format: Format): string => {
   };
 
   const dateFormats = {
-    long: (date) => {
+    long: (date: Date) => {
       const dayString = numberStringWithPrefix(date.getDate());
       const monthString = numberStringWithPrefix(date.getMonth() + 1);
       const yearString = date.getFullYear();
 
       return `${dayString}.${monthString}.${yearString}`;
     },
-    short: (date) => {
+    short: (date: Date) => {
       const monthString = numberStringWithPrefix(date.getMonth() + 1);
       const yearString = date.getFullYear();
 
       return `${monthString}/${yearString}`;
     },
-    year: (date) => {
-      return date.getFullYear();
+    year: (date: Date) => {
+      return `${date.getFullYear()}`;
     }
   };
 

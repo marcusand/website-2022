@@ -1,3 +1,4 @@
+import path from 'path';
 import yaml from '@rollup/plugin-yaml';
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
@@ -8,7 +9,12 @@ const config = {
   kit: {
     adapter: adapter(),
     vite: {
-      plugins: [yaml()]
+      plugins: [yaml()],
+      resolve: {
+        alias: {
+          $content: path.resolve('./src/content')
+        }
+      }
     }
   },
   extensions: ['.svelte']

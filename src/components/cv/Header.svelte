@@ -1,6 +1,6 @@
 <script lang="ts">
   import { getFormattedDate } from '$lib/getFormattedDate';
-  import type { Person } from 'src/types';
+  import type { Person } from '$content/types';
 
   export let data: Person;
 

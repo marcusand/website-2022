@@ -1,8 +1,3 @@
-declare module '*.yml' {
-  const data: { [key: string]: any };
-  export default data;
-}
-
 type Link = {
   title: string;
   username: string;
@@ -17,13 +12,20 @@ export type Person = {
   links: Array<Link>;
 };
 
+export type Site = {
+  domain: string;
+  title: string;
+  description: string;
+  keywords: Array<string>;
+};
+
 export type Experience = {
   title: string;
   subtitle: string;
-  startDate?: Date;
+  startDate: Date;
   endDate?: Date;
   location: string;
-  description: string;
+  description?: string;
 };
 
 export type Skill = {

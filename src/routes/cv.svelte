@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Header from '../components/cv/Header.svelte';
   import Section from '../components/Section.svelte';
   import Experience from '../components/cv/Experience.svelte';

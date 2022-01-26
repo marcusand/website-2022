@@ -1,7 +1,7 @@
 <script lang="ts">
   import Section from '../components/Section.svelte';
   import Project from '../components/home/Project.svelte';
-  import type { Project as TProject } from 'src/types';
+  import type { Project as TProject } from '$content/types';
 
   import siteData from '../content/site.yaml';
   import projects from '../content/home/projects/index';

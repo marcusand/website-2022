@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Skill } from 'src/types';
+  import type { Skill } from '$content/types';
   import SectionElement from '../SectionElement.svelte';
 
   export let data: Skill;
@@ -21,20 +21,24 @@
     {:else}
       <div class="two-col">
         <div class="col">
-          <div class="level">professional level</div>
-          <ul>
-            {#each keywordsProfessional as keyword}
-              <li>{keyword}</li>
-            {/each}
-          </ul>
+          {#if keywordsProfessional}
+            <div class="level">professional level</div>
+            <ul>
+              {#each keywordsProfessional as keyword}
+                <li>{keyword}</li>
+              {/each}
+            </ul>
+          {/if}
         </div>
         <div class="col">
-          <div class="level">semi-professional level / not on daily basis</div>
-          <ul>
-            {#each keywordsSemiProfessional as keyword}
-              <li>{keyword}</li>
-            {/each}
-          </ul>
+          {#if keywordsSemiProfessional}
+            <div class="level">semi-professional level / not on daily basis</div>
+            <ul>
+              {#each keywordsSemiProfessional as keyword}
+                <li>{keyword}</li>
+              {/each}
+            </ul>
+          {/if}
         </div>
       </div>
     {/if}

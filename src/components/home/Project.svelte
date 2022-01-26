@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getFormattedDate } from '$lib/getFormattedDate';
 
-  import type { Project } from 'src/types';
+  import type { Project } from '$content/types';
   import SectionElement from '../SectionElement.svelte';
 
   export let data: Project;
