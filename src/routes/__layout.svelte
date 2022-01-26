@@ -18,7 +18,14 @@
 <style>
   @font-face {
     font-family: 'Objectivity';
+    src: url('/fonts/objectivity.regular.otf') format('opentype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Objectivity';
     src: url('/fonts/objectivity.medium.otf') format('opentype');
+    font-weight: 500;
   }
 
   :global(html),
@@ -74,20 +81,23 @@
     margin: 0 0 1rem 0;
   }
 
+  main {
+    padding: 2rem 2rem;
+    max-width: 1300px;
+  }
+
   @media print {
     @page {
       size: A4;
-      margin: 10mm 5mm;
+      margin: 20mm 5mm;
     }
 
     :global(body),
     :global(main) {
-      font-size: 0.9rem;
+      background: white;
+      font-family: Objectivity, sans-serif;
+      font-size: 9pt;
+      padding: 0;
     }
-  }
-
-  main {
-    padding: 2rem 2rem;
-    max-width: 1300px;
   }
 </style>
