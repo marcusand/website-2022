@@ -1,5 +1,15 @@
-declare module '*.yaml' {
+declare module '*.yml' {
   const data: { [key: string]: any };
+  export default data;
+}
+
+declare module 'site.yaml' {
+  const data: {
+    domain: string;
+    title: string;
+    description: string;
+    keywords: Array<string>;
+  };
   export default data;
 }
 
@@ -12,7 +22,6 @@ type Link = {
 export type Person = {
   name: string;
   email: string;
-  phone: string;
   birthday: Date;
   location: string;
   links: Array<Link>;
