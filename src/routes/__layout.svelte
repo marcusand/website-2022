@@ -69,16 +69,19 @@
   :global(h1) {
     text-transform: uppercase;
     text-decoration: underline;
+    font-weight: 500;
     margin: 0 0 2rem 0;
   }
 
   :global(h2) {
     text-transform: uppercase;
+    font-weight: 500;
     margin: 0 0 1.5rem 0;
   }
 
   :global(h3) {
     margin: 0 0 1rem 0;
+    font-weight: 500;
   }
 
   main {

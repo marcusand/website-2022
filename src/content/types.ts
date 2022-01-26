@@ -1,14 +1,14 @@
 type Link = {
-  title: string;
-  username: string;
+  title?: string;
+  alias: string;
   href: string;
 };
 
 export type Person = {
   name: string;
-  email: string;
   birthday: Date;
   location: string;
+  description: string;
   links: Array<Link>;
 };
 

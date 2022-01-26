@@ -1,11 +1,16 @@
 name: Marcus Schreiter
-email: mail@marcusand.de
 birthday: 1996-10-11
 location: Frankfurt am Main, Germany
+description: I am a software developer with a focus on frontend development, user
+  interfaces and multimedia technology. Here you can see a selection of projects
+  I most recently worked on.
 links:
+  - title: mail
+    alias: mail@marcusand.de
+    href: mailto:mail@marcusand.de
   - title: github
-    username: marcusand
+    alias: '@marcusand'
     href: https://github.com/marcusand
   - title: linkedin
-    username: marcus-schreiter
+    alias: '@marcus-schreiter'
     href: https://www.linkedin.com/in/marcus-schreiter-4b04a6182/

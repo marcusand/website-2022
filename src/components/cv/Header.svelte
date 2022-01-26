@@ -4,7 +4,7 @@
 
   export let data: Person;
 
-  const { name, location, email, links } = data;
+  const { name, location, links } = data;
   const birthday = getFormattedDate(data.birthday, 'long');
 </script>
 
@@ -19,12 +19,9 @@
     <li>
       currently living in {location}
     </li>
-    <li>
-      contact me at <a href="mailto:{email}">{email}</a>
-    </li>
     {#each links as link}
       <li>
-        {link.title} <a href={link.href} target="__blank">@{link.username}</a>
+        {link.title ?? ''} <a href={link.href} target="__blank">{link.alias}</a>
       </li>
     {/each}
   </ul>
