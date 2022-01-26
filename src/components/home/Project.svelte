@@ -60,6 +60,12 @@
     font-size: 1.6rem;
   }
 
+  @media only screen and (max-width: 900px) {
+    .right {
+      font-size: 1rem;
+    }
+  }
+
   img {
     width: 100%;
     height: 15rem;

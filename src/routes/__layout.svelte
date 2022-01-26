@@ -86,6 +86,16 @@
     max-width: 1300px;
   }
 
+  @media only screen and (max-width: 900px) {
+    :global(body) {
+      display: block;
+    }
+
+    main {
+      padding: 2rem 1rem;
+    }
+  }
+
   @media print {
     @page {
       size: A4;
