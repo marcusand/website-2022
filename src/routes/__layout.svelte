@@ -1,10 +1,14 @@
+<script lang="ts">
+  import siteData from '../content/site.yaml';
+
+  const { title, description, keywords } = siteData;
+  const keywordList = keywords.join(', ');
+</script>
+
 <svelte:head>
-  <title>marcus &&</title>
-  <meta name="description" content="personal website of marcusand" />
-  <meta
-    name="keywords"
-    content="marcusand, marcus, software, web, development, personal, website"
-  />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content={keywordList} />
 </svelte:head>
 
 <main>
