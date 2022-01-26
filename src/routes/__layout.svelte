@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>marcusand</title>
+  <title>marcus &&</title>
   <meta name="description" content="personal website of marcusand" />
   <meta
     name="keywords"
@@ -18,14 +18,18 @@
   }
 
   :global(html),
-  :global(body),
-  :global(#svelte) {
+  :global(body) {
     background: #f6f5f0;
     font-family: Objectivity, sans-serif;
     line-height: 1.25;
     margin: 0;
     padding: 0;
-    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+  }
+
+  :global(body) {
+    display: flex;
+    justify-content: center;
   }
 
   :global(*) {
@@ -48,23 +52,29 @@
 
   :global(li) {
     list-style-position: inside;
-    list-style-type: '— ';
+    list-style-type: '// ';
   }
 
   :global(h1) {
     text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   :global(h2) {
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 
   :global(h3) {
-    margin-top: 0rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 
   :global(section) {
-    margin-top: 4rem;
+    margin: 2rem 0;
     page-break-inside: avoid;
   }
 
@@ -76,20 +86,12 @@
 
     :global(body),
     :global(main) {
-      margin: 0;
-      padding: 0;
       font-size: 0.9rem;
     }
   }
 
   main {
-    margin: 0rem 0rem;
     padding: 1rem 2rem;
-  }
-
-  @media only screen and (min-width: 1300px) {
-    main {
-      margin: 0rem 5rem;
-    }
+    max-width: 1300px;
   }
 </style>

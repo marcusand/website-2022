@@ -8,7 +8,7 @@
   const personalProjects: Array<TProject> = projects.filter((p) => p.level === 'personal');
 </script>
 
-<h1>marcusand</h1>
+<h1>marcus &&</h1>
 <section>
   <h2>professional projects</h2>
   {#each professionalProjects as project}

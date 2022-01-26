@@ -4,24 +4,39 @@
 
 <style>
   .section {
-    margin-bottom: 4rem;
+    margin: 2rem 0;
   }
 
-  @media only screen and (min-width: 900px) {
+  :global(.section .body) {
+    display: flex;
+  }
+
+  :global(.section .left) {
+    width: var(--left-column-width);
+    padding-right: 1rem;
+  }
+
+  :global(.section .right) {
+    width: var(--right-column-width);
+  }
+
+  @media only screen and (max-width: 900px) {
     .section {
-      margin-bottom: 2rem;
-    }
-    :global(.section .body) {
-      display: flex;
+      margin: 2rem 0 3rem 0;
     }
 
-    :global(.section .left) {
-      width: var(--left-column-width);
-      padding-right: 1rem;
+    :global(.section .body) {
+      display: block;
+    }
+
+    :global(.section .left),
+    :global(.section .right) {
+      width: 100%;
+      padding: 0;
     }
 
     :global(.section .right) {
-      width: var(--right-column-width);
+      margin-top: 0.5rem;
     }
   }
 </style>
