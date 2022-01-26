@@ -3,16 +3,6 @@ declare module '*.yml' {
   export default data;
 }
 
-declare module 'site.yaml' {
-  const data: {
-    domain: string;
-    title: string;
-    description: string;
-    keywords: Array<string>;
-  };
-  export default data;
-}
-
 type Link = {
   title: string;
   username: string;
