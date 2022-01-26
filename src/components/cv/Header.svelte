@@ -32,6 +32,6 @@
 
 <style>
   header {
-    margin: 2rem 0rem;
+    margin: 2rem 0 0 0;
   }
 </style>

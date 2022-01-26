@@ -1,5 +1,6 @@
 <script>
   import Header from '../components/cv/Header.svelte';
+  import Section from '../components/Section.svelte';
   import Experience from '../components/cv/Experience.svelte';
   import Skill from '../components/cv/Skill.svelte';
 
@@ -11,27 +12,18 @@
 
 <h1>CV</h1>
 <Header data={personData} />
-<section>
-  <h2>Experience</h2>
-  <div>
-    {#each experiences as experience}
-      <Experience data={experience} />
-    {/each}
-  </div>
-</section>
-<section>
-  <h2>Education</h2>
-  <div>
-    {#each educations as education}
-      <Experience data={education} />
-    {/each}
-  </div>
-</section>
-<section>
-  <h2>Skills</h2>
-  <div>
-    {#each skills as skill}
-      <Skill data={skill} />
-    {/each}
-  </div>
-</section>
+<Section title="Experience">
+  {#each experiences as experience}
+    <Experience data={experience} />
+  {/each}
+</Section>
+<Section title="Education">
+  {#each educations as education}
+    <Experience data={education} />
+  {/each}
+</Section>
+<Section title="Skills">
+  {#each skills as skill}
+    <Skill data={skill} />
+  {/each}
+</Section>

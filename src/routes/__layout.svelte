@@ -58,24 +58,16 @@
   :global(h1) {
     text-transform: uppercase;
     text-decoration: underline;
-    margin-top: 0;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0;
   }
 
   :global(h2) {
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin: 0 0 1.5rem 0;
   }
 
   :global(h3) {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-
-  :global(section) {
-    margin: 2rem 0;
-    page-break-inside: avoid;
+    margin: 0 0 1rem 0;
   }
 
   @media print {
@@ -91,7 +83,7 @@
   }
 
   main {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     max-width: 1300px;
   }
 </style>

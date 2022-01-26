@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Section from '../components/Section.svelte';
   import Project from '../components/home/Project.svelte';
   import type { Project as TProject } from 'src/types';
 
@@ -9,16 +10,13 @@
 </script>
 
 <h1>marcus &&</h1>
-<section>
-  <h2>professional projects</h2>
+<Section title="Professional Projects">
   {#each professionalProjects as project}
     <Project data={project} />
   {/each}
-</section>
-
-<section>
-  <h2>personal projects</h2>
+</Section>
+<Section title="Personal Projects">
   {#each personalProjects as project}
     <Project data={project} />
   {/each}
-</section>
+</Section>

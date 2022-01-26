@@ -2,7 +2,7 @@
   import { getFormattedDate } from '$lib/getFormattedDate';
 
   import type { Project } from 'src/types';
-  import Section from '../Section.svelte';
+  import SectionElement from '../SectionElement.svelte';
 
   export let data: Project;
 
@@ -14,51 +14,49 @@
   const dateFormatted = getFormattedDate(date, 'year');
 </script>
 
-<Section>
-  <div class="body">
-    <div class="left">
-      <img src={imageSrc} alt={image.alt} />
-    </div>
-    <div class="right">
-      <h3>
-        {#if type === 'web'}
-          <a href="https://{title}" target="__blank">{title}</a>
-        {:else}
-          {title}
-        {/if}
-      </h3>
-      <ul>
-        {#if company}
-          <li>at {company}</li>
-        {/if}
-        <li>{dateFormatted}</li>
-        <li>role: {role}</li>
-      </ul>
-      {#if description || links}
-        <div class="more" on:click={() => (unfolded = !unfolded)}>
-          {#if unfolded}
-            less
-          {:else}
-            more
-          {/if}
-        </div>
-        <div class="more-content" class:unfolded>
-          {#if links}
-            {#each links as link}
-              <a href={link} target="__blank">{link}</a>
-            {/each}
-          {/if}
-          {#if description}
-            <div class="description">{description}</div>
-          {/if}
-        </div>
-      {/if}
-    </div>
+<SectionElement>
+  <div class="left">
+    <img src={imageSrc} alt={image.alt} />
   </div>
-</Section>
+  <div class="right">
+    <h3>
+      {#if type === 'web'}
+        <a href="https://{title}" target="__blank">{title}</a>
+      {:else}
+        {title}
+      {/if}
+    </h3>
+    <ul>
+      {#if company}
+        <li>at {company}</li>
+      {/if}
+      <li>{dateFormatted}</li>
+      <li>role: {role}</li>
+    </ul>
+    {#if description || links}
+      <button on:click={() => (unfolded = !unfolded)}>
+        {#if unfolded}
+          less
+        {:else}
+          more
+        {/if}
+      </button>
+      <div class="more-content" class:unfolded>
+        {#if links}
+          {#each links as link}
+            <a href={link} target="__blank">{link}</a>
+          {/each}
+        {/if}
+        {#if description}
+          <div class="description">{description}</div>
+        {/if}
+      </div>
+    {/if}
+  </div>
+</SectionElement>
 
 <style>
-  .body {
+  .right {
     font-size: 1.6rem;
   }
 
@@ -69,7 +67,7 @@
   }
 
   h3 {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   ul {
@@ -77,17 +75,23 @@
   }
 
   .more-content {
-    padding-top: 2rem;
+    margin-top: 1rem;
   }
 
   .description {
-    margin: 1rem 0rem;
+    margin-top: 1rem;
   }
 
-  .more {
+  button {
+    border: 0;
+    padding: 0;
+    font-size: inherit;
+    font: inherit;
+    background: transparent;
     text-decoration: underline;
     color: var(--accent-color);
     cursor: pointer;
+    margin-top: 0.5rem;
   }
 
   .more-content {

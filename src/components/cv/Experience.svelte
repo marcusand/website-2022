@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getFormattedDate } from '$lib/getFormattedDate';
   import type { Experience } from 'src/types';
-  import Section from '../Section.svelte';
+  import SectionElement from '../SectionElement.svelte';
 
   export let data: Experience;
 
@@ -10,21 +10,18 @@
   const end = endDate ? getFormattedDate(endDate, 'short') : 'today';
 </script>
 
-<Section>
-  <h3>{title}</h3>
-  <div class="body">
-    <ul class="left">
-      <li>{subtitle}</li>
-      <li>{location}</li>
-      <li>
-        {start}
-        —
-        {end}
-      </li>
-    </ul>
-    <div class="right">{@html description}</div>
-  </div>
-</Section>
+<SectionElement {title}>
+  <ul class="left">
+    <li>{subtitle}</li>
+    <li>{location}</li>
+    <li>
+      {start}
+      —
+      {end}
+    </li>
+  </ul>
+  <div class="right">{@html description}</div>
+</SectionElement>
 
 <style>
   li {
