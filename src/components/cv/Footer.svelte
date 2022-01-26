@@ -18,6 +18,6 @@
 
 <style>
   footer {
-    margin: 4rem 0 0 0;
+    margin: 6rem 0 0 0;
   }
 </style>

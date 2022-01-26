@@ -9,6 +9,7 @@
   import experiences from '../content/cv/experience/index';
   import educations from '../content/cv/education/index';
   import skills from '../content/cv/skills/index';
+  import hobbies from '$content/cv/hobbies.yaml';
 </script>
 
 <h1>CV</h1>
@@ -27,5 +28,12 @@
   {#each skills as skill}
     <Skill data={skill} />
   {/each}
+</Section>
+<Section title="Hobbies">
+  <ul>
+    {#each hobbies as hobby}
+      <li>{@html hobby}</li>
+    {/each}
+  </ul>
 </Section>
 <Footer />

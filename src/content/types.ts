@@ -35,6 +35,8 @@ export type Skill = {
   keywordsSemiProfessional?: Array<string>;
 };
 
+export type Hobbies = Array<string>;
+
 type ProjectType = 'web' | 'on-location';
 type ProjectLevel = 'professional' | 'personal';
 type ProjectImage = {

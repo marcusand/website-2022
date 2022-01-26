@@ -22,6 +22,11 @@ declare module '$content/cv/skills/*' {
   export default data;
 }
 
+declare module '$content/cv/hobbies.yaml' {
+  const data: import('./types').Hobbies;
+  export default data;
+}
+
 const experience: import('./types').Experience;
 
 declare module '$content/cv/experience/*' {
