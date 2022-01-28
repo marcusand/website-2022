@@ -71,18 +71,18 @@
     text-decoration: underline;
     font-size: 1rem;
     font-weight: 500;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.5rem 0;
   }
 
   :global(h2) {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1rem 0;
   }
 
   :global(h3) {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
     font-size: 1rem;
     font-weight: 500;
   }

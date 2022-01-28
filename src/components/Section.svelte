@@ -9,7 +9,7 @@
 
 <style>
   section {
-    margin: 3rem 0 0rem 0;
+    margin: 4rem 0 0rem 0;
     page-break-inside: avoid;
   }
 </style>
