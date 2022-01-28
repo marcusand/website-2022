@@ -1,6 +1,7 @@
 <script lang="ts">
   import Section from '../components/Section.svelte';
   import Project from '../components/home/Project.svelte';
+  import EqualWidthGrid from '../components/EqualWidthGrid.svelte';
   import type { Project as TProject } from '$content/types';
 
   import siteData from '../content/site.yaml';
@@ -29,23 +30,22 @@
 </p>
 <div>
   <Section title="Professional Projects">
-    {#each professionalProjects as project}
-      <Project data={project} />
-    {/each}
+    <EqualWidthGrid>
+      {#each professionalProjects as project}
+        <Project data={project} />
+      {/each}
+    </EqualWidthGrid>
   </Section>
   <Section title="Personal Projects">
-    {#each personalProjects as project}
-      <Project data={project} />
-    {/each}
+    <EqualWidthGrid>
+      {#each personalProjects as project}
+        <Project data={project} />
+      {/each}
+    </EqualWidthGrid>
   </Section>
 </div>
 
 <style>
-  p,
-  :global(.right) {
-    font-size: 1.6rem;
-  }
-
   @media only screen and (max-width: 900px) {
     p,
     :global(.right) {

@@ -2,11 +2,10 @@
   import { getFormattedDate } from '$lib/getFormattedDate';
 
   import type { Project } from '$content/types';
-  import SectionElement from '../SectionElement.svelte';
 
   export let data: Project;
 
-  let unfolded = false;
+  let show = false;
 
   const imageBaseUrl = '/images/projects';
   const { type, title, company, date, role, description, links, image } = data;
@@ -14,34 +13,23 @@
   const dateFormatted = getFormattedDate(date, 'year');
 </script>
 
-<SectionElement>
-  <div class="left">
-    <img src={imageSrc} alt={image.alt} />
-  </div>
-  <div class="right">
-    <h3>
-      {#if type === 'web'}
-        <a href="https://{title}" target="__blank">{title}</a>
-      {:else}
-        {title}
-      {/if}
-    </h3>
-    <ul>
-      {#if company}
-        <li>at {company}</li>
-      {/if}
-      <li>{dateFormatted}</li>
-      <li>role: {role}</li>
-    </ul>
-    {#if description || links}
-      <button on:click={() => (unfolded = !unfolded)}>
-        {#if unfolded}
-          less
-        {:else}
-          more
+<div
+  class="project"
+  on:mouseleave={() => (show = false)}
+  on:mouseenter={() => (show = true)}
+  on:pointerdown={() => (show = !show)}
+>
+  <div class="tile">
+    <img class="project-image" src={imageSrc} alt={image.alt} class:passiv={show} />
+    <div class="project-content" class:show>
+      <ul>
+        {#if company}
+          <li>at {company}</li>
         {/if}
-      </button>
-      <div class="more-content" class:unfolded>
+        <li>{dateFormatted}</li>
+        <li>role: {role}</li>
+      </ul>
+      <div class="more-content">
         {#if links}
           {#each links as link}
             <a href={link} target="__blank">{link}</a>
@@ -51,19 +39,49 @@
           <div class="description">{description}</div>
         {/if}
       </div>
-    {/if}
+    </div>
   </div>
-</SectionElement>
+  <h3>
+    {#if type === 'web'}
+      <a href="https://{title}" target="__blank">https://{title}</a>
+    {:else}
+      {title}
+    {/if}
+  </h3>
+</div>
 
 <style>
-  img {
+  .tile {
+    position: relative;
     width: 100%;
-    height: 15rem;
+    height: 20rem;
+  }
+
+  .project-content {
+    position: absolute;
+    display: none;
+    height: 100%;
+    top: 0;
+    left: 0;
+    word-break: break-all;
+    padding: 1rem;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    filter: blur(0px);
+    transition: all 0.2s;
+    transition-property: filter opacity;
   }
 
   h3 {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  h3 a {
+    color: black;
   }
 
   ul {
@@ -78,23 +96,11 @@
     margin-top: 1rem;
   }
 
-  button {
-    border: 0;
-    padding: 0;
-    font-size: inherit;
-    font: inherit;
-    background: transparent;
-    text-decoration: underline;
-    color: var(--accent-color);
-    cursor: pointer;
-    margin-top: 0.5rem;
-  }
-
-  .more-content {
-    display: none;
-  }
-
-  .unfolded {
+  .show {
     display: block;
+  }
+
+  .passiv {
+    opacity: 0.25;
   }
 </style>

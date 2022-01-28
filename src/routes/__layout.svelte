@@ -46,7 +46,7 @@
   :global(*) {
     box-sizing: border-box;
 
-    --accent-color: #5c9270;
+    --accent-color: #272b91;
     --left-column-width: 30%;
     --right-column-width: 70%;
   }
@@ -69,24 +69,27 @@
   :global(h1) {
     text-transform: uppercase;
     text-decoration: underline;
+    font-size: 1rem;
     font-weight: 500;
     margin: 0 0 2rem 0;
   }
 
   :global(h2) {
     text-transform: uppercase;
+    font-size: 1rem;
     font-weight: 500;
     margin: 0 0 1.5rem 0;
   }
 
   :global(h3) {
     margin: 0 0 1rem 0;
+    font-size: 1rem;
     font-weight: 500;
   }
 
   main {
     padding: 2rem 2rem;
-    max-width: 1300px;
+    max-width: 1200px;
   }
 
   @media only screen and (max-width: 900px) {
