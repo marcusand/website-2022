@@ -1,4 +1,5 @@
 <script lang="ts">
+  import H1 from '../components/H1.svelte';
   import Section from '../components/Section.svelte';
   import Project from '../components/home/Project.svelte';
   import EqualWidthGrid from '../components/EqualWidthGrid.svelte';
@@ -13,7 +14,7 @@
   const { description, links } = personData;
 </script>
 
-<h1>{siteData.title}</h1>
+<H1>{siteData.title}</H1>
 <p>{description}</p>
 <p>
   I am online and reachable on
@@ -44,12 +45,3 @@
     </EqualWidthGrid>
   </Section>
 </div>
-
-<style>
-  @media only screen and (max-width: 900px) {
-    p,
-    :global(.right) {
-      font-size: 1rem;
-    }
-  }
-</style>
