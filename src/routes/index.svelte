@@ -1,7 +1,8 @@
 <script lang="ts">
   import Section from '../components/Section.svelte';
-  import Project from '../components/home/Project/Index.svelte';
+  import Project from '../components/home/Project/index.svelte';
   import EqualWidthGrid from '../components/EqualWidthGrid.svelte';
+  import Links from '../components/home/Links.svelte';
   import type { Project as TProject } from '$content/types';
 
   import siteData from '$content/site.yaml';
@@ -15,19 +16,7 @@
 
 <h1>{siteData.title}</h1>
 <p>{description}</p>
-<p>
-  I am online and reachable on
-  {#each links as link, index}
-    <span>
-      {#if index === links.length - 1}
-        and
-      {/if}
-      <a href={link.href} target="__blank">
-        {link.title}
-      </a>
-    </span>
-  {/each}
-</p>
+<Links {links} />
 <div>
   <Section title="Professional Projects">
     <EqualWidthGrid>
