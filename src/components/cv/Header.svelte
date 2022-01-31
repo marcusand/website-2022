@@ -26,9 +26,3 @@
     {/each}
   </ul>
 </header>
-
-<style>
-  header {
-    margin: 2rem 0 0 0;
-  }
-</style>
