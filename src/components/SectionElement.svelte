@@ -7,7 +7,12 @@
     <h3>{title}</h3>
   {/if}
   <div class="body">
-    <slot />
+    <div class="left">
+      <slot name="left" />
+    </div>
+    <div class="right">
+      <slot name="right" />
+    </div>
   </div>
 </div>
 
@@ -20,12 +25,12 @@
     display: flex;
   }
 
-  :global(.section-element .left) {
+  .left {
     width: var(--left-column-width);
     padding-right: 1rem;
   }
 
-  :global(.section-element .right) {
+  .right {
     width: var(--right-column-width);
   }
 
@@ -38,13 +43,13 @@
       display: block;
     }
 
-    :global(.section-element .left),
-    :global(.section-element .right) {
+    .left,
+    .right {
       width: 100%;
       padding: 0;
     }
 
-    :global(.section-element .right) {
+    .right {
       margin-top: 0.5rem;
     }
   }

@@ -12,7 +12,7 @@
 </script>
 
 <SectionElement {title}>
-  <ul class="left">
+  <ul slot="left">
     <li>{subtitle}</li>
     <li>{location}</li>
     <li>
@@ -21,7 +21,7 @@
       {end}
     </li>
   </ul>
-  <div class="right">{@html description}</div>
+  <svelte:fragment slot="right">{@html description}</svelte:fragment>
 </SectionElement>
 
 <style>

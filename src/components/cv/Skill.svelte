@@ -8,10 +8,8 @@
 </script>
 
 <SectionElement>
-  <div class="left">
-    <h3>{title}</h3>
-  </div>
-  <div class="right">
+  <h3 slot="left">{title}</h3>
+  <svelte:fragment slot="right">
     {#if keywords}
       <ul>
         {#each keywords as keyword}
@@ -42,7 +40,7 @@
         </div>
       </div>
     {/if}
-  </div>
+  </svelte:fragment>
 </SectionElement>
 
 <style>
