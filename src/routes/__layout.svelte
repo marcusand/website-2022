@@ -25,13 +25,14 @@
   @font-face {
     font-family: 'Objectivity';
     src: url('/fonts/objectivity.medium.otf') format('opentype');
-    font-weight: 500;
+    font-weight: 600;
   }
 
   :global(html),
   :global(body) {
     background: #f6f5f0;
     font-family: Objectivity, sans-serif;
+    /* color: rgb(54, 54, 54); */
     line-height: 1.25;
     margin: 0;
     padding: 0;
@@ -70,7 +71,7 @@
     width: 100%;
     text-transform: uppercase;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 0.5rem 0;
     border-bottom: 2px solid black;
   }
@@ -78,14 +79,14 @@
   :global(h2) {
     text-transform: uppercase;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 1rem 0;
   }
 
   :global(h3) {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   main {
