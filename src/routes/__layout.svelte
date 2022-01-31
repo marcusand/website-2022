@@ -31,7 +31,7 @@
   :global(html),
   :global(body) {
     background: #f6f5f0;
-    font-family: Objectivity, sans-serif;
+    font-family: Objectivity, Verdana, sans-serif;
     /* color: rgb(54, 54, 54); */
     line-height: 1.25;
     margin: 0;
