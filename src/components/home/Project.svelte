@@ -101,6 +101,7 @@
   }
 
   .passiv {
-    opacity: 0.25;
+    opacity: 0.4;
+    filter: blur(10px);
   }
 </style>
