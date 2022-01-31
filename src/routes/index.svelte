@@ -4,9 +4,9 @@
   import EqualWidthGrid from '../components/EqualWidthGrid.svelte';
   import type { Project as TProject } from '$content/types';
 
-  import siteData from '../content/site.yaml';
+  import siteData from '$content/site.yaml';
   import personData from '$content/person.yaml';
-  import projects from '../content/home/projects/index';
+  import projects from '$content/home/projects/index';
 
   const professionalProjects: Array<TProject> = projects.filter((p) => p.level === 'professional');
   const personalProjects: Array<TProject> = projects.filter((p) => p.level === 'personal');

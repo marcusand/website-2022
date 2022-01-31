@@ -1,5 +1,5 @@
 <script lang="ts">
-  import siteData from '../content/site.yaml';
+  import siteData from '$content/site.yaml';
 
   const { title, description, keywords } = siteData;
   const keywordList = keywords.join(', ');

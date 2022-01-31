@@ -5,10 +5,10 @@
   import Skill from '../components/cv/Skill.svelte';
   import Footer from '../components/cv/Footer.svelte';
 
-  import personData from '../content/person.yaml';
-  import experiences from '../content/cv/experience/index';
-  import educations from '../content/cv/education/index';
-  import skills from '../content/cv/skills/index';
+  import personData from '$content/person.yaml';
+  import experiences from '$content/cv/experience/index';
+  import educations from '$content/cv/education/index';
+  import skills from '$content/cv/skills/index';
   import hobbies from '$content/cv/hobbies.yaml';
 </script>
 
