@@ -1,4 +1,4 @@
-type Link = {
+export type Link = {
   title?: string;
   alias: string;
   href: string;
@@ -37,9 +37,9 @@ export type Skill = {
 
 export type Hobbies = Array<string>;
 
-type ProjectType = 'web' | 'on-location';
-type ProjectLevel = 'professional' | 'personal';
-type ProjectImage = {
+export type ProjectType = 'web' | 'on-location';
+export type ProjectLevel = 'professional' | 'personal';
+export type ProjectImage = {
   file: string;
   alt: string;
 };
