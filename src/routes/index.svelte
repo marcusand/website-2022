@@ -15,7 +15,7 @@
 </script>
 
 <h1>{siteData.title}</h1>
-<p>{description}</p>
+<p>{@html description}</p>
 <Links {links} />
 <div>
   <Section title="Professional Projects">
