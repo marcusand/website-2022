@@ -1,5 +1,4 @@
 <script lang="ts">
-  import H1 from '../components/H1.svelte';
   import Section from '../components/Section.svelte';
   import Project from '../components/home/Project.svelte';
   import EqualWidthGrid from '../components/EqualWidthGrid.svelte';
@@ -14,7 +13,7 @@
   const { description, links } = personData;
 </script>
 
-<H1>{siteData.title}</H1>
+<h1>{siteData.title}</h1>
 <p>{description}</p>
 <p>
   I am online and reachable on

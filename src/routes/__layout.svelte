@@ -67,11 +67,12 @@
   }
 
   :global(h1) {
+    width: 100%;
     text-transform: uppercase;
-    text-decoration: underline;
     font-size: 1rem;
     font-weight: 500;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 0.5rem 0;
+    border-bottom: 2px solid black;
   }
 
   :global(h2) {
