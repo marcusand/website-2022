@@ -32,8 +32,8 @@
   :global(body) {
     background: #f6f5f0;
     font-family: Objectivity, Verdana, sans-serif;
-    /* color: rgb(54, 54, 54); */
-    line-height: 1.25;
+    line-height: 1.3;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     overflow-x: hidden !important;
@@ -47,17 +47,26 @@
   :global(*) {
     box-sizing: border-box;
 
-    --accent-color: #272b91;
+    --accent-color: #64009e;
     --left-column-width: 30%;
     --right-column-width: 70%;
   }
 
-  :global(a) {
-    color: var(--accent-color);
+  :global(p) {
+    margin: 0 0 0.5rem 0;
   }
 
-  :global(ul),
-  :global(p) {
+  :global(a) {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+
+  :global(a):hover {
+    text-decoration: underline;
+    color: black;
+  }
+
+  :global(ul) {
     margin: 0;
     padding-left: 0;
   }
@@ -69,6 +78,7 @@
 
   :global(h1) {
     width: 100%;
+    color: var(--accent-color);
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
@@ -78,6 +88,7 @@
 
   :global(h2) {
     text-transform: uppercase;
+    border-bottom: 2px solid black;
     font-size: 1rem;
     font-weight: 600;
     margin: 0 0 1rem 0;

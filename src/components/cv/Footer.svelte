@@ -18,6 +18,8 @@
 
 <style>
   footer {
-    margin: 6rem 0 0 0;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid black;
   }
 </style>
