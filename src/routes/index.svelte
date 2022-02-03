@@ -1,6 +1,6 @@
 <script lang="ts">
   import Section from '../components/Section.svelte';
-  import Project from '../components/home/projects/index.svelte';
+  import Project from '../components/home/project/index.svelte';
   import EqualWidthGrid from '../components/EqualWidthGrid.svelte';
   import Links from '../components/home/Links.svelte';
   import type { Project as TProject } from '$content/types';
