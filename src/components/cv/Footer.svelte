@@ -18,7 +18,7 @@
 
 <style>
   footer {
-    margin-top: 1rem;
+    margin-bottom: 2rem;
     padding-top: 1rem;
     border-top: 2px solid black;
   }

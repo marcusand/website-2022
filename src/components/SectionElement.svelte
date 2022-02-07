@@ -18,7 +18,7 @@
 
 <style>
   .section-element {
-    margin: 1.5rem 0 0 0;
+    margin: 0 0 1.5rem 0;
   }
 
   .body {

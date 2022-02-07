@@ -53,7 +53,7 @@
   }
 
   :global(p) {
-    margin: 0 0 0.5rem 0;
+    margin: 0.5rem 0 0 0;
   }
 
   :global(a) {
@@ -101,7 +101,7 @@
   }
 
   main {
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
     max-width: 1200px;
   }
 

@@ -12,24 +12,30 @@
   import hobbies from '$content/cv/hobbies.yaml';
 </script>
 
-<h1>CV</h1>
-<Header data={personData} />
-<Section title="Experience">
+<Section>
+  <h1>CV</h1>
+  <Header data={personData} />
+</Section>
+<Section>
+  <h2>Experience</h2>
   {#each experiences as experience}
     <Experience data={experience} />
   {/each}
 </Section>
-<Section title="Education">
+<Section>
+  <h2>Education</h2>
   {#each educations as education}
     <Experience data={education} />
   {/each}
 </Section>
-<Section title="Skills">
+<Section>
+  <h2>Skills</h2>
   {#each skills as skill}
     <Skill data={skill} />
   {/each}
 </Section>
-<Section title="Hobbies">
+<Section>
+  <h2>Hobbies</h2>
   <ul>
     {#each hobbies as hobby}
       <li>{@html hobby}</li>

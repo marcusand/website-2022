@@ -14,22 +14,24 @@
   const { description, links } = personData;
 </script>
 
-<h1>{siteData.title}</h1>
-<p>{@html description}</p>
-<Links {links} />
-<div>
-  <Section title="Professional Projects">
-    <EqualWidthGrid>
-      {#each professionalProjects as project}
-        <Project data={project} />
-      {/each}
-    </EqualWidthGrid>
-  </Section>
-  <Section title="Personal Projects">
-    <EqualWidthGrid>
-      {#each personalProjects as project}
-        <Project data={project} />
-      {/each}
-    </EqualWidthGrid>
-  </Section>
-</div>
+<Section>
+  <h1>{siteData.title}</h1>
+  <p>{@html description}</p>
+  <Links {links} />
+</Section>
+<Section>
+  <h2>Professional Projects</h2>
+  <EqualWidthGrid>
+    {#each professionalProjects as project}
+      <Project data={project} />
+    {/each}
+  </EqualWidthGrid>
+</Section>
+<Section>
+  <h2>Personal Projects</h2>
+  <EqualWidthGrid>
+    {#each personalProjects as project}
+      <Project data={project} />
+    {/each}
+  </EqualWidthGrid>
+</Section>
