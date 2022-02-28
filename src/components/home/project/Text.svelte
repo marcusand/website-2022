@@ -26,7 +26,7 @@
       {/each}
     {/if}
     {#if description}
-      <div class="description">{description}</div>
+      <div class="description">{@html description}</div>
     {/if}
   </div>
 </div>
@@ -38,8 +38,11 @@
     height: 100%;
     top: 0;
     left: 0;
-    word-break: break-all;
     padding: 1rem;
+  }
+
+  a {
+    word-break: break-all;
   }
 
   ul {
@@ -52,6 +55,7 @@
 
   .description {
     margin-top: 1rem;
+    word-break: normal;
   }
 
   .show {
