@@ -15,7 +15,7 @@
   class="project"
   on:mouseleave={() => (show = false)}
   on:mouseenter={() => (show = true)}
-  on:pointerdown={() => (show = true)}
+  on:click={() => (show = !show)}
 >
   <div class="tile">
     <img class="project-image" src={imageSrc} alt={image.alt} class:passiv={show} />
