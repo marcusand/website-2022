@@ -6,5 +6,15 @@ date: 2021-12-01
 role: 'Fullstack Developer'
 image:
   file: 'recherchestation.png'
-  alt: Screenshot of the "chronotopos romantik" showing a interactive map
-description:
+  alt: Screenshot of the "chronotopos romantik" showing an interactive map
+description: <p>
+  As part of the "Deutsche Romantik Museum" Project we created an interactive
+  web experience. The application is based on the same data set as one of the
+  main exhibits in the museum and explores the whereabouts of over 30 protagonists
+  of european romanticism.
+  </p>
+  <p>
+  I did the implementation back to front using statamic cms, next.js and tailwind.
+  For the interactive map using leaflet.js and a custom set of map tiles served
+  by an self-hosted tile server.
+  </p>
