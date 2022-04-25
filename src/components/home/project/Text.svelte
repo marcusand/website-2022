@@ -39,6 +39,7 @@
     top: 0;
     left: 0;
     padding: 1rem;
+    overflow-y: scroll;
   }
 
   a {

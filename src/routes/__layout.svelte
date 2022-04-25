@@ -1,5 +1,6 @@
 <script lang="ts">
   import siteData from '$content/site.yaml';
+  import '../style/index.css';
 
   const { title, description, keywords } = siteData;
   const keywordList = keywords.join(', ');
@@ -16,90 +17,6 @@
 </main>
 
 <style>
-  @font-face {
-    font-family: 'Objectivity';
-    src: url('/fonts/objectivity.regular.otf') format('opentype');
-    font-weight: 400;
-  }
-
-  @font-face {
-    font-family: 'Objectivity';
-    src: url('/fonts/objectivity.medium.otf') format('opentype');
-    font-weight: 600;
-  }
-
-  :global(html),
-  :global(body) {
-    background: #f6f5f0;
-    font-family: Objectivity, Verdana, sans-serif;
-    line-height: 1.3;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden !important;
-  }
-
-  :global(body) {
-    display: flex;
-    justify-content: center;
-  }
-
-  :global(*) {
-    box-sizing: border-box;
-
-    --accent-color: #64009e;
-    --left-column-width: 30%;
-    --right-column-width: 70%;
-  }
-
-  :global(p) {
-    margin: 0.5rem 0 0 0;
-  }
-
-  :global(a) {
-    color: var(--accent-color);
-    text-decoration: none;
-  }
-
-  :global(a):hover {
-    text-decoration: underline;
-    color: black;
-  }
-
-  :global(ul) {
-    margin: 0;
-    padding-left: 0;
-  }
-
-  :global(li) {
-    list-style-position: inside;
-    list-style-type: '// ';
-  }
-
-  :global(h1) {
-    width: 100%;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 0.5rem 0;
-    border-bottom: 2px solid black;
-  }
-
-  :global(h2) {
-    text-transform: uppercase;
-    border-bottom: 2px solid black;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 1rem 0;
-  }
-
-  :global(h3) {
-    margin: 0 0 0.5rem 0;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
   main {
     padding: 0rem 2rem;
     max-width: 1200px;
