@@ -9,4 +9,14 @@ image:
   alt: Person interacting with a point of information kiosk
 links:
   - https://meso.design/en/projects/dialogmuseum-barrier-free-visitor-touchpoints-for-sensory-museum
-description:
+description: <p>
+  As part of the project team I implemented a digital guestbook and a POI system
+  for the museums foyer.
+  </p>
+  <p>
+  Both are react and electron based applications with some special hardware and
+  input devices attached. Being a museum covering the topic of blindness
+  the digital guestbook has text to speech and voice recording abilities. For the
+  kiosk system in the foyer I did the integration of a photo booth feature as well
+  as a donation system offering both a classic coin slot and contactless payment.
+  </p>
