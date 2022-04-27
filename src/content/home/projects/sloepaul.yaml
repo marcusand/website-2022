@@ -6,4 +6,7 @@ role: 'Design and Fullstack Development'
 image:
   file: 'sloepaul.jpg'
   alt: Screenshot of the the "Sloe Paul" website showing a portrait of a person
-description:
+description: <p>
+  A digital home for <em>Sloe Paul</em> where I am
+  also part of the live band.
+  </p>
