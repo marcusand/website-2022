@@ -19,6 +19,9 @@
     <li>
       currently living in {location}
     </li>
+    <li>
+      portfolio <a href="https://marcusand.de" target="__blank">marcusand.de</a>
+    </li>
     {#each links as link}
       <li>
         {link.title ?? ''} <a href={link.href} target="__blank">{link.alias}</a>
