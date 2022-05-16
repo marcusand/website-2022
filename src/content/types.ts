@@ -42,6 +42,7 @@ export type ProjectLevel = 'professional' | 'personal';
 export type ProjectImage = {
   file: string;
   alt: string;
+  copyright?: string;
 };
 
 export type Project = {

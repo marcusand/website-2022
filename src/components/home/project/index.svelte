@@ -21,14 +21,36 @@
     <img class="project-image" src={imageSrc} alt={image.alt} class:passiv={show} />
     <Text {company} {role} {links} {description} {date} {show} />
   </div>
-  <Title {title} {type} />
+  <div class="bottom">
+    <Title {title} {type} />
+    {#if image.copyright}
+      <div class="copyright">{image.copyright}</div>
+    {/if}
+  </div>
 </div>
 
 <style>
+  .project {
+    width: 100%;
+  }
+
   .tile {
     position: relative;
     width: 100%;
     height: 20rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    flex-shrink: 0;
+    margin: 0.25rem 0 0 0.5rem;
+    font-size: 0.7rem;
+    color: var(--gray);
   }
 
   .project-image {

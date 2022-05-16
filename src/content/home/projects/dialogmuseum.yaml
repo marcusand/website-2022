@@ -7,6 +7,7 @@ role: 'Application Developer'
 image:
   file: 'dialogmuseum.jpg'
   alt: Person interacting with a point of information kiosk
+  copyright: © MESO
 links:
   - https://meso.design/en/projects/dialogmuseum-barrier-free-visitor-touchpoints-for-sensory-museum
 description: <p>

@@ -7,6 +7,7 @@ role: 'Application and Backend Developer'
 image:
   file: 'drm.jpg'
   alt: Inside of the Deutsche Romantik Museum
+  copyright: © MESO
 links:
   - https://meso.design/en/news/die-sehnsucht-hat-allemal-recht
 description: <p>
