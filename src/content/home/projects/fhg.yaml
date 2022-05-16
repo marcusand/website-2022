@@ -7,6 +7,14 @@ role: 'Application and Backend Developer'
 image:
   file: 'fhg.jpg'
   alt: Exhibition wall with screens and text panels
+  copyright: © Fraunhofer IIS
 links:
   - https://www.iis.fraunhofer.de/de/profil/augustinerhof.html
-description: <p></p>
+description: <p>
+  Small showroom for the Fraunhofer Institute in Nürnberg.
+  </p>
+  <p>
+  I participated in the creation of several POI systems, a
+  light installation with ArtNet DMX control, and a fully functional
+  backend for exhibition control and content management.
+  </p>
