@@ -1,0 +1,12 @@
+type: 'on-location'
+level: 'professional'
+title: 'Showroom Fraunhofer IIS'
+company: 'MESO Digital Interiors GmbH'
+date: 2022-02-01
+role: 'Application and Backend Developer'
+image:
+  file: 'fhg.jpg'
+  alt: Exhibition wall with screens and text panels
+links:
+  - https://www.iis.fraunhofer.de/de/profil/augustinerhof.html
+description: <p></p>
