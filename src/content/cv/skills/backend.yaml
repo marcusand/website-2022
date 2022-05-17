@@ -1,10 +1,10 @@
 title: Backend technologies
 keywordsProfessional:
   - node.js
-  - cms systems (wordpress, statamic)
+  - cms systems (wordpress, statamic, directus)
   - mqtt
 keywordsSemiProfessional:
   - php
   - laravel
   - express
-  - sql / no-sql databases
+  - sql & no-sql databases

@@ -2,6 +2,6 @@ title: Tools
 keywordsProfessional:
   - git
 keywordsSemiProfessional:
-  - docker
-  - gitlab CI/CD pipeline
-  - apache / nginx
+  - docker & docker-compose
+  - CI/CD practices (gitlab CI & github actions)
+  - apache & nginx
