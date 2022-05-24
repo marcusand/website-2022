@@ -1,6 +1,7 @@
 title: Tools
 keywordsProfessional:
   - git
+  - webpack
 keywordsSemiProfessional:
   - docker & docker-compose
   - CI/CD practices (gitlab CI & github actions)
