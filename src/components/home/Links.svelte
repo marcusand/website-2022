@@ -5,11 +5,11 @@
 </script>
 
 <p>
-  I am online and reachable on
+  You can reach me via
   {#each links as link, index}
     <span>
       {#if index === links.length - 1}
-        and
+        or
       {/if}
       <a href={link.href} target="__blank">
         {link.title}
