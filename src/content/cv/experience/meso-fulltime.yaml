@@ -5,7 +5,8 @@ startDate: 2020-05-01
 endDate: 2022-07-31
 location: Frankfurt am Main, Germany
 description: Worked mainly in the field of bespoke software for exhibitions, showrooms and
-  the web with a clear focus on frontend technologies and the web stack (i.a. react + redux + electron/nw).
+  the web with a clear focus on user interfaces, frontend technologies and the web stack.
+  That meant developing web and mobile applications as well as digital exhibits and kiosk applications.
   Clients of the company ranged from public museums to major corporations and projects often
-  held a set of challenging and interesting requirements such as integrating custom interfaces,
+  held a set of challenging and interesting requirements such as integrating custom hardware interfaces,
   websocket/mqtt communication, large asset handling or network synchronized multimedia playback.
