@@ -20,7 +20,7 @@
       <div class="two-col">
         <div class="col">
           {#if keywordsProfessional}
-            <div class="level">professional level</div>
+            <div class="level">advanced</div>
             <ul>
               {#each keywordsProfessional as keyword}
                 <li>{keyword}</li>
@@ -30,7 +30,7 @@
         </div>
         <div class="col">
           {#if keywordsSemiProfessional}
-            <div class="level">semi-professional level / not on daily basis</div>
+            <div class="level">familiar</div>
             <ul>
               {#each keywordsSemiProfessional as keyword}
                 <li>{keyword}</li>
