@@ -4,7 +4,7 @@
 
   export let data: Person;
 
-  const { name, location, links } = data;
+  const { name, location, links, description_cv } = data;
   const birthday = getFormattedDate(data.birthday, 'long');
 </script>
 
@@ -29,11 +29,6 @@
     {/each}
   </ul>
   <p>
-    I am an experienced and dedicated software engineer with a degree in computer science and almost
-    four years of professional experience. I am a proactive, well-organised and communicative
-    coworker who is always eager to learn new things and solve unique challenges. I love working on
-    human-centered software and I'm always dedicated to create the best user experience possible. I
-    highly value best practices in software development and project management and I am convinced,
-    that great teamwork is the key to success.
+    {@html description_cv}
   </p>
 </header>

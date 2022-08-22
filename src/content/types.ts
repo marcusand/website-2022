@@ -9,6 +9,7 @@ export type Person = {
   birthday: Date;
   location: string;
   description: string;
+  description_cv: string;
   links: Array<Link>;
 };
 
