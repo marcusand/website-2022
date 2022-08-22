@@ -37,8 +37,7 @@ body {
   justify-content: center;
 }
 
-p,
-ul {
+p {
   margin: 0.8rem 0 0 0;
 }
 
@@ -53,6 +52,7 @@ a:hover {
 }
 
 ul {
+  margin: 0;
   padding-left: 0;
 }
 
