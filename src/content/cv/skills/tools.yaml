@@ -5,6 +5,5 @@ keywordsProfessional:
 keywordsSemiProfessional:
   - docker & docker-compose
   - CI/CD practices (gitlab CI & github actions)
-  - apache & nginx
   - node-red
   - figma
