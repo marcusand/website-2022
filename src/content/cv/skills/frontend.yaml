@@ -2,13 +2,15 @@ title: Frontend technologies
 keywordsProfessional:
   - html & css
   - javascript
-  - react.js & redux
+  - react.js
+  - redux
   - next.js
   - nw.js & electron.js
   - tailwind.css
 keywordsSemiProfessional:
   - typescript
   - svelte & sveltekit
+  - vue.js
   - three.js & webGL
   - xstate.js
   - react native

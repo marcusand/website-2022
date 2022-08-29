@@ -3,7 +3,8 @@ keywordsProfessional:
   - git
   - webpack
 keywordsSemiProfessional:
+  - jest (testing framework)
   - docker & docker-compose
   - CI/CD practices (gitlab CI & github actions)
   - node-red
-  - figma
+  - figma & framer
