@@ -22,7 +22,7 @@
   <div class="more">
     {#if links}
       {#each links as link}
-        <a href={link} target="_blank">{link}</a>
+        <div><a href={link} target="_blank">{link}</a></div>
       {/each}
     {/if}
     {#if description}
