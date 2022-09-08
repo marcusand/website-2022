@@ -7,6 +7,7 @@ image:
   file: 'metronome.jpg'
   alt: Screenshot of the online metronome website
 links:
+  - https://metronome.marcusand.de
   - https://github.com/marcusand/metronome
 description: <p>
   As a musician myself I never found an online metronome

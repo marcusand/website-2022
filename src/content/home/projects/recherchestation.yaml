@@ -7,6 +7,8 @@ role: 'Fullstack Developer'
 image:
   file: 'recherchestation.png'
   alt: Screenshot of the "chronotopos romantik" showing an interactive map
+links:
+  - https://chronotopos-romantik.freies-deutsches-hochstift.de
 description: <p>
   As part of the "Deutsche Romantik Museum" project we created an interactive
   web experience. The application is based on the same data set as one of the
