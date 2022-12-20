@@ -27,5 +27,6 @@
 <style>
   li {
     list-style-type: none;
+    margin-left: 0;
   }
 </style>

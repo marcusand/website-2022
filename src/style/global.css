@@ -57,8 +57,9 @@ ul {
 }
 
 li {
-  list-style-position: inside;
-  list-style-type: '// ';
+  list-style-position: outside;
+  list-style-type: '* ';
+  margin-left: 0.9rem;
 }
 
 h1 {
