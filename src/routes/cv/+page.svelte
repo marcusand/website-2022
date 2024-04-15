@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Header from '../components/cv/Header.svelte';
-  import Section from '../components/Section.svelte';
-  import Experience from '../components/cv/Experience.svelte';
-  import Skill from '../components/cv/Skill.svelte';
-  import Footer from '../components/cv/Footer.svelte';
+  import Header from '../../components/cv/Header.svelte';
+  import Section from '../../components/Section.svelte';
+  import Experience from '../../components/cv/Experience.svelte';
+  import Skill from '../../components/cv/Skill.svelte';
+  import Footer from '../../components/cv/Footer.svelte';
 
   import personData from '$content/person.yaml';
   import experiences from '$content/cv/experience/index';

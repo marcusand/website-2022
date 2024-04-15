@@ -2,7 +2,7 @@
   "name": "2022",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev --host",
+    "dev": "vite dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
@@ -14,7 +14,7 @@
   "devDependencies": {
     "@rollup/plugin-yaml": "^3.1.0",
     "@sveltejs/adapter-static": "^1.0.0-next.29",
-    "@sveltejs/kit": "^1.0.0-next.326",
+    "@sveltejs/kit": "^1.30.4",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "eslint": "^7.32.0",
@@ -24,7 +24,6 @@
     "prettier-plugin-svelte": "^2.4.0",
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.0",
-    "svelte-preprocess": "^4.10.6",
     "typescript": "^4.5.2"
   },
   "type": "module"
