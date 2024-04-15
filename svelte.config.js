@@ -1,22 +1,14 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
   preprocess: vitePreprocess(),
   kit: {
     adapter: adapter({
-      pages: './deploy/build'
-    }),
-    // trailingSlash: 'always',
-    prerender: {
-      // default: true,
-      crawl: true,
-      // enabled: true,
-      // onError: 'continue',
-      entries: ['*']
-    }
-  },
-  extensions: ['.svelte']
+      pages: 'deploy/build'
+    })
+  }
 };
 
 export default config;
