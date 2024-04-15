@@ -19,11 +19,11 @@
     "@typescript-eslint/parser": "^4.31.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.2.1",
+    "eslint-plugin-svelte3": "^4.0.0",
     "prettier": "^2.4.1",
-    "prettier-plugin-svelte": "^2.4.0",
-    "svelte": "^3.48.0",
-    "svelte-check": "^2.7.0",
+    "prettier-plugin-svelte": "^2.10.1",
+    "svelte": "^4.0.0",
+    "svelte-check": "^3.4.3",
     "typescript": "^5.4.5"
   },
   "type": "module"
