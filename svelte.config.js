@@ -7,7 +7,10 @@ const config = {
   kit: {
     adapter: adapter({
       pages: 'deploy/build'
-    })
+    }),
+    alias: {
+      '$content/*': 'src/content/*'
+    }
   }
 };
 
