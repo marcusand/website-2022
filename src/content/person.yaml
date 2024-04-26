@@ -1,13 +1,13 @@
 name: Marcus Schreiter
 birthday: 1996-10-11
 location: Tallinn, Estonia
-description: <p>Hi, I'm Marcus!</p>
-  <p>
-  I am a software developer with a passion for frontend development, user interfaces and multimedia technology.
-  I love working on human-centered software and creating flawless user experiences.<br>
+description: <p>
+  Hi, I'm Marcus, a software developer specialized in frontend development, user interfaces and multimedia technology.
+  I love working on human-centered software and flawless user experiences.
   </p>
   <p>
-  For the last few years I have mainly developed web apps, interactive exhibits and backend systems for museums and showrooms. Here you can see a selection of projects I most recently worked on.
+  For the last few years I have developed web sites, web apps, a chrome extension, interactive exhibits and backend systems for museums and showrooms.
+  Have a look at projects to get an idea of that.
   </p>
 description_cv:
   I am an experienced and dedicated software engineer with a degree in computer science and almost
