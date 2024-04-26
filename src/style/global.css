@@ -23,7 +23,8 @@
 
 html,
 body {
-  background: #f6f5f0;
+  /* background: #f6f5f0; */
+  background: white;
   font-family: Objectivity, Verdana, sans-serif;
   line-height: 1.4;
   font-size: 1rem;

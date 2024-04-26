@@ -1,7 +1,6 @@
 <script lang="ts">
   // import Project from '../components/home/project/index.svelte';
   // import EqualWidthGrid from '../components/EqualWidthGrid.svelte';
-  import Links from '../components/home/Links.svelte';
   // import type { Project as TProject } from '$content/types';
 
   import personData from '$content/person.yaml';
@@ -13,7 +12,6 @@
 </script>
 
 <p>{@html description}</p>
-<Links {links} />
 <!-- <Section>
   <h2>Professional Projects</h2>
   <EqualWidthGrid>
