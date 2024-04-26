@@ -1,5 +1,6 @@
 <script lang="ts">
   import siteData from '$content/site.yaml';
+  import Header from '../components/Header.svelte';
   import '../style/index.css';
 
   const { title, description, keywords } = siteData;
@@ -12,13 +13,16 @@
   <meta name="keywords" content={keywordList} />
 </svelte:head>
 
-<main>
-  <slot />
-</main>
+<div class="main-container">
+  <Header />
+  <main>
+    <slot />
+  </main>
+</div>
 
 <style>
-  main {
-    padding: 0rem 2rem;
+  .main-container {
+    margin: 30px;
     max-width: 1200px;
   }
 
@@ -27,8 +31,8 @@
       display: block;
     }
 
-    main {
-      padding: 2rem 1rem;
+    .main-container {
+      margin: 15px;
     }
   }
 
