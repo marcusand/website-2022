@@ -2,7 +2,6 @@
   import type { Experience } from '$content/types';
 
   import { getFormattedDate } from '$lib/getFormattedDate';
-  import SectionElement from '../SectionElement.svelte';
 
   export let data: Experience;
 
@@ -11,22 +10,18 @@
   const end = endDate ? getFormattedDate(endDate, 'short') : 'today';
 </script>
 
-<SectionElement {title}>
-  <ul slot="left">
-    <li>{subtitle}</li>
-    <li>{location}</li>
-    <li>
-      {start}
-      —
-      {end}
-    </li>
-  </ul>
-  <svelte:fragment slot="right">{@html description}</svelte:fragment>
-</SectionElement>
+<div class="experience">
+  <h3>{title}</h3>
+  <div class="info">
+    <span>{subtitle}</span> //
+    <span>{location}</span> //
+    <span>{start} — {end}</span>
+  </div>
+  <div>{@html description}</div>
+</div>
 
 <style>
-  li {
-    list-style-type: none;
-    margin-left: 0;
+  .experience {
+    margin: 20px 0;
   }
 </style>

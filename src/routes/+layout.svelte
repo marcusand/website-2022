@@ -23,7 +23,12 @@
 <style>
   .main-container {
     margin: 30px;
+    width: 100%;
     max-width: 1200px;
+  }
+
+  main {
+    width: 100%;
   }
 
   @media only screen and (max-width: 900px) {
@@ -33,6 +38,7 @@
 
     .main-container {
       margin: 15px;
+      width: 100%;
     }
   }
 

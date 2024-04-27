@@ -8,9 +8,9 @@
   <a href="/" class="site-title">{title}</a>
   <nav>
     <ul>
-      <li><a href="http://">projects</a></li>
-      <li><a href="http://">vita</a></li>
-      <li><a href="http://">contact</a></li>
+      <li><a href="/projects">projects</a></li>
+      <li><a href="/vita">vita</a></li>
+      <li><a href="/contact">contact</a></li>
     </ul>
   </nav>
 </header>
