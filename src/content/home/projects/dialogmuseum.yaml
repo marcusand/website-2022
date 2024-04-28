@@ -1,6 +1,7 @@
 type: 'on-location'
 level: 'professional'
 title: 'Dialogmuseum Frankfurt'
+slug: dialogmuseum
 company: 'MESO Digital Interiors GmbH'
 date: 2021-06-01
 role: 'Application Developer'

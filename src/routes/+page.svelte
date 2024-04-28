@@ -4,6 +4,7 @@
   // import type { Project as TProject } from '$content/types';
 
   import personData from '$content/person.yaml';
+  import Section from '../components/Section.svelte';
   // import projects from '$content/home/projects/index';
 
   // const professionalProjects: Array<TProject> = projects.filter((p) => p.level === 'professional');
@@ -11,7 +12,9 @@
   const { description, links } = personData;
 </script>
 
-<p>{@html description}</p>
+<Section>
+  {@html description}
+</Section>
 <!-- <Section>
   <h2>Professional Projects</h2>
   <EqualWidthGrid>

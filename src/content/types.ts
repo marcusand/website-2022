@@ -50,6 +50,7 @@ export type Project = {
   type: ProjectType;
   level: ProjectLevel;
   title: string;
+  slug: string;
   image: ProjectImage;
   company?: string;
   date: Date;

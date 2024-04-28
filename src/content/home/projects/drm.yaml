@@ -1,6 +1,7 @@
 type: 'on-location'
 level: 'professional'
 title: 'Deutsches Romantik Museum Frankfurt'
+slug: drm
 company: 'MESO Digital Interiors GmbH'
 date: 2021-09-01
 role: 'Application and Backend Developer'
