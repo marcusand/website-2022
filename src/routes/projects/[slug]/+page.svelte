@@ -66,4 +66,8 @@
   ul {
     padding-left: 0.5rem;
   }
+
+  a {
+    word-break: break-all;
+  }
 </style>
