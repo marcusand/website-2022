@@ -71,24 +71,24 @@ li {
 }
 
 h1 {
-  width: 100%;
-  color: var(--accent-color);
-  text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  border-bottom: 2px solid black;
 }
 
 h2 {
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 0.5rem 0;
 }
 
 h3 {
   text-transform: uppercase;
-  margin: 0 0 0.5rem 0;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }

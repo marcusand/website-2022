@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { Project } from '$content/types';
   import { getFormattedDate } from '$lib/getFormattedDate';
-  import Section from '../../../components/Section.svelte';
 
   export let data: Project;
 
@@ -12,25 +11,23 @@
   const year = getFormattedDate(date, 'year');
 </script>
 
-<Section>
-  <h2>{title}</h2>
-  <div>{year}</div>
+<h1>{title}</h1>
+<div>{year}</div>
 
-  <div class="description">{@html description}</div>
+<div class="description">{@html description}</div>
 
-  <div class="image">
-    <img src={imageSrc} alt={image.alt} />
-  </div>
+<div class="image">
+  <img src={imageSrc} alt={image.alt} />
+</div>
 
-  <div class="info">
-    {#if company !== undefined}
-      <div><span class="label">company: </span><span>{company}</span></div>
-    {/if}
-    <div><span class="label">role: </span><span>{role}</span></div>
-  </div>
+<div class="info">
+  {#if company !== undefined}
+    <div><span class="label">company: </span><span>{company}</span></div>
+  {/if}
+  <div><span class="label">role: </span><span>{role}</span></div>
+</div>
 
-  <a href="/projects">← all projects</a>
-</Section>
+<a href="/projects">← all projects</a>
 
 <style>
   img {

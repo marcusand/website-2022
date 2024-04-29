@@ -21,7 +21,4 @@
 </div>
 
 <style>
-  .experience {
-    margin: 20px 0;
-  }
 </style>
