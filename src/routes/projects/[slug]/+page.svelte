@@ -22,9 +22,27 @@
 
 <div class="info">
   {#if company !== undefined}
-    <div><span class="label">company: </span><span>{company}</span></div>
+    <div>
+      <span class="label">company: </span>
+      <span>{company}</span>
+    </div>
   {/if}
-  <div><span class="label">role: </span><span>{role}</span></div>
+
+  <div>
+    <span class="label">role: </span>
+    <span>{role}</span>
+  </div>
+
+  <div>
+    <span class="label">links: </span>
+    <span>
+      <ul>
+        {#each links as link}
+          <li><a href={link} target="_blank">{link}</a></li>
+        {/each}
+      </ul>
+    </span>
+  </div>
 </div>
 
 <a href="/projects">← all projects</a>
@@ -43,5 +61,9 @@
 
   .label {
     font-weight: bold;
+  }
+
+  ul {
+    padding-left: 0.5rem;
   }
 </style>
