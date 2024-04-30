@@ -12,9 +12,10 @@
 </script>
 
 <h1>{title}</h1>
-<div>{year}</div>
 
-<div class="description">{@html description}</div>
+<p>{year}</p>
+
+<p class="description">{@html description}</p>
 
 <div class="image">
   <img src={imageSrc} alt={image.alt} />
@@ -53,10 +54,9 @@
     object-fit: contain;
   }
 
-  .description,
-  .info,
-  .image {
-    margin-bottom: 30px;
+  .image,
+  .info {
+    margin: 1rem 0;
   }
 
   .label {

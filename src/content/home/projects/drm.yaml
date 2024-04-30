@@ -11,14 +11,9 @@ image:
   copyright: © MESO
 links:
   - https://meso.design/en/news/die-sehnsucht-hat-allemal-recht
-description: <p>
-  I was part of the project team creating an exhibition consisting of
+description: I was part of the project team creating an exhibition consisting of
   more than 30 digital exhibits and a complete backend structure
   with a cms and deployment pipeline.
-  </p>
-  <p>
   My main focus in the project was on implementing a handful of
   interactive exhibits and a software for video playback.
   All software was written using web technologies (react + redux + nw.js).
-
-  <p/>
