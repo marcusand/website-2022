@@ -3,5 +3,5 @@
   const { description } = personData;
 </script>
 
-<h1>Home</h1>
+<h1>Hey</h1>
 <p>{@html description}</p>

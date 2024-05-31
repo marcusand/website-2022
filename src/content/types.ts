@@ -10,7 +10,8 @@ export type Person = {
   location: string;
   description: string;
   description_cv: string;
-  links: Array<Link>;
+  link_linkedin: string;
+  link_github: string;
 };
 
 export type Site = {
