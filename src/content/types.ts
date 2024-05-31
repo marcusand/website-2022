@@ -8,8 +8,6 @@ export type Person = {
   name: string;
   birthday: Date;
   location: string;
-  description: string;
-  description_cv: string;
   link_linkedin: string;
   link_github: string;
 };
