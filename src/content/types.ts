@@ -56,5 +56,6 @@ export type Project = {
   date: Date;
   role: string;
   description: string;
-  links: Array<string>;
+  technologies?: Array<string>;
+  links?: Array<string>;
 };

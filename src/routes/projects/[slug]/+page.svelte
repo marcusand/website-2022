@@ -1,14 +1,17 @@
 <script lang="ts">
   import type { Project } from '$content/types';
   import { getFormattedDate } from '$lib/getFormattedDate';
+  import LabelValue from '../../../components/LabelValue.svelte';
 
   export let data: Project;
 
   const imageBaseUrl = '/images/projects';
 
-  const { title, date, description, image, level, links, role, slug, type, company } = data;
+  const { title, date, description, image, level, links, role, slug, type, company, technologies } =
+    data;
   const imageSrc = `${imageBaseUrl}/${image.file}`;
   const year = getFormattedDate(date, 'year');
+  const technologiesList = technologies?.join(', ');
 </script>
 
 <h1>{title}</h1>
@@ -23,27 +26,24 @@
 
 <div class="info">
   {#if company !== undefined}
-    <div>
-      <span class="label">company: </span>
-      <span>{company}</span>
-    </div>
+    <LabelValue label="company">{company}</LabelValue>
   {/if}
 
-  <div>
-    <span class="label">role: </span>
-    <span>{role}</span>
-  </div>
+  <LabelValue label="role">{role}</LabelValue>
 
-  <div>
-    <span class="label">links: </span>
-    <span>
+  {#if technologiesList && technologiesList.length > 0}
+    <LabelValue label="technologies">{technologiesList}</LabelValue>
+  {/if}
+
+  {#if links && links.length > 0}
+    <LabelValue label="links">
       <ul>
         {#each links as link}
           <li><a href={link} target="_blank">{link}</a></li>
         {/each}
       </ul>
-    </span>
-  </div>
+    </LabelValue>
+  {/if}
 </div>
 
 <a href="/projects">← all projects</a>
@@ -57,10 +57,6 @@
   .image,
   .info {
     margin: 1rem 0;
-  }
-
-  .label {
-    font-weight: bold;
   }
 
   ul {

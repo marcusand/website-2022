@@ -11,9 +11,15 @@ image:
   copyright: © MESO
 links:
   - https://meso.design/en/projects/dialogmuseum-barrier-free-visitor-touchpoints-for-sensory-museum
+technologies:
+  - React
+  - Redux
+  - Electron
+  - MQTT (IoT)
+  - TTS (text to speech)
 description: As part of the project team I implemented a digital guestbook and a POI system
   for the museums foyer.
-  Both are react and electron based applications with some special hardware and
+  Both are react and electron based applications with special hardware and
   input devices attached. Being a museum covering the topic of blindness,
   the digital guestbook has text to speech and voice recording abilities. For the
   kiosk system in the foyer I did the integration of a photo booth feature as well
