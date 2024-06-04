@@ -46,7 +46,7 @@
   {/if}
 </div>
 
-<a href="/projects">← all projects</a>
+<a href="/projects">← back to all projects</a>
 
 <style>
   img {
