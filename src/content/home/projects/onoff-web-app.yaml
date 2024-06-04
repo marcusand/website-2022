@@ -1,0 +1,26 @@
+type: 'on-location'
+level: 'professional'
+title: 'Onoff web app'
+slug: onoff-web-app
+company: 'Onoff Telecom'
+date: 2022-11-15
+role: 'Frontend Engineer'
+image:
+  file: 'onoff-web-app.png'
+  alt: Screenshot of the onoff web app
+  copyright: © Onoff
+links:
+  - https://www.onoffbusiness.com/en/features/applications-onoff-business/web-application/
+technologies:
+  - React
+  - Redux
+  - Typescript
+  - SCSS
+  - VoIP (SIP + WebRTC)
+  - Testing (Jest/RTL)
+description: I was part of the project team creating an exhibition consisting of
+  more than 30 digital exhibits and a complete backend structure
+  with a cms and deployment pipeline.
+  My main focus in the project was on implementing a handful of
+  interactive exhibits and a software for video playback.
+  All software was written using web technologies (react + redux + nw.js).

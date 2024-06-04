@@ -7,4 +7,6 @@ import fhg from '$content/home/projects/fhg.yaml';
 import metronome from '$content/home/projects/metronome.yaml';
 import sloepaul from '$content/home/projects/sloepaul.yaml';
 
-export default [fhg, drm, recherchestation, dialogmuseum, kvwl, metronome, sloepaul];
+import onoffWebApp from '$content/home/projects/onoff-web-app.yaml';
+
+export default [fhg, drm, recherchestation, dialogmuseum, kvwl, metronome, sloepaul, onoffWebApp];
