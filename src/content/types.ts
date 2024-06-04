@@ -21,7 +21,8 @@ export type Site = {
 
 export type Experience = {
   title: string;
-  subtitle: string;
+  company: string;
+  companyUrl?: string;
   startDate: Date;
   endDate?: Date;
   location: string;
