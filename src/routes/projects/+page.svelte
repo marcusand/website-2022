@@ -1,11 +1,15 @@
 <script lang="ts">
   import projects from '$content/home/projects';
+
+  const projectsSorted = [...projects].sort((projectA, projectB) => {
+    return projectB.date.valueOf() - projectA.date.valueOf();
+  });
 </script>
 
 <h1>Projects</h1>
 
 <ul>
-  {#each projects as project}
+  {#each projectsSorted as project}
     <li><a href="/projects/{project.slug}">{project.title}</a></li>
   {/each}
 </ul>
