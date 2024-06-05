@@ -1,0 +1,27 @@
+type: 'on-location'
+level: 'professional'
+title: 'Onoff Click2Call chrome extension'
+slug: onoff-chrome-extension
+company: 'Onoff Telecom'
+date: 2023-04-01
+role: 'Lead Frontend Engineer'
+image:
+  file: 'onoff-chrome-extension.png'
+  alt: Two screenshots showing how the chrome extension works
+  copyright: © Onoff
+links:
+  - https://chromewebstore.google.com/detail/onoff-business-click2call/jbfkkljambdhjlkcfkcbpjfkkamkccfm
+technologies:
+  - React
+  - Redux
+  - Typescript
+  - SCSS
+  - VoIP (SIP + WebRTC)
+  - Jest
+description:
+  As part of the web team in Onoff I lead the development of the Click2Call chrome extension.
+  What previously just existed as a MVP codebase, we decided to redo from scratch and over the course
+  of a few month brought it to the first release with excellent user feedback. The extension enabled
+  phone number highlighting and a click to call functionality on any website the user is on. <br>
+  In my role as a lead developer I set the foundation for the architecture, implemented features, did
+  code reviews and actively contributed to design decisions.
