@@ -10,6 +10,13 @@
 
 <ul>
   {#each projectsSorted as project}
-    <li><a href="/projects/{project.slug}">{project.title}</a></li>
+    <li>
+      <a href="/projects/{project.slug}">
+        {project.title}
+      </a>
+      {#if project.company !== undefined}
+        <span>at {project.company}</span>
+      {/if}
+    </li>
   {/each}
 </ul>
