@@ -17,10 +17,12 @@ technologies:
   - Typescript
   - SCSS
   - VoIP (SIP + WebRTC)
-  - Testing (Jest/RTL)
-description: I was part of the project team creating an exhibition consisting of
-  more than 30 digital exhibits and a complete backend structure
-  with a cms and deployment pipeline.
-  My main focus in the project was on implementing a handful of
-  interactive exhibits and a software for video playback.
-  All software was written using web technologies (react + redux + nw.js).
+  - Websockets (PubNub)
+  - Jest
+description:
+  As part of the web team at Onoff I contributed in the development and maintenance of the
+  onoff web client. Users could login with their Onoff account and do phone calls
+  and send SMS directly from the browser. Other features of the web client included a synced contact book,
+  voicemail feature, account settings and CRM integrations.<br>
+  In my role I implemented new features, refactored legacy code, did code reviews and contributed
+  to design discussions.
