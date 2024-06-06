@@ -22,7 +22,7 @@
 
 <style>
   .main-container {
-    margin: 30px;
+    margin: 30px 30px 60px 30px;
     width: 100%;
     max-width: 1200px;
   }
@@ -37,7 +37,7 @@
     }
 
     .main-container {
-      margin: 15px;
+      margin: 15px 15px 30px 15px;
       width: 100%;
     }
   }
