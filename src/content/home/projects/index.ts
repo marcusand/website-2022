@@ -10,7 +10,7 @@ import sloepaul from '$content/home/projects/sloepaul.yaml';
 import onoffWebApp from '$content/home/projects/onoff-web-app.yaml';
 import onoffChromeExtension from '$content/home/projects/onoff-chrome-extension.yaml';
 
-export default [
+const projects = [
   fhg,
   drm,
   recherchestation,
@@ -21,3 +21,9 @@ export default [
   onoffWebApp,
   onoffChromeExtension
 ];
+
+const projectsSorted = [...projects].sort((projectA, projectB) => {
+  return projectB.date.valueOf() - projectA.date.valueOf();
+});
+
+export default projectsSorted;
