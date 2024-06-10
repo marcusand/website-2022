@@ -1,18 +1,12 @@
 <script lang="ts">
   import projects from '$content/projects';
+  import ProjectListItem from './components/ProjectListItem.svelte';
 </script>
 
 <h1>Projects</h1>
 
 <ul>
   {#each projects as project}
-    <li>
-      <a href="/projects/{project.slug}">
-        {project.title}
-      </a>
-      {#if project.company !== undefined}
-        <span>at {project.company}</span>
-      {/if}
-    </li>
+    <ProjectListItem {project} />
   {/each}
 </ul>

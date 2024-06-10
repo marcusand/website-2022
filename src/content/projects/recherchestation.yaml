@@ -2,7 +2,7 @@ type: 'web'
 level: 'professional'
 title: 'Chronotopos Romantik'
 slug: chronotopos-romantik
-company: 'MESO'
+companyId: meso
 date: 2021-12-01
 role: 'Fullstack Developer'
 image:

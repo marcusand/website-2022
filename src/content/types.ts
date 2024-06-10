@@ -19,10 +19,16 @@ export type Site = {
   keywords: Array<string>;
 };
 
+export type Company = {
+  id: string;
+  name: string;
+  nameShort?: string;
+  url?: string;
+};
+
 export type Experience = {
   title: string;
-  company: string;
-  companyUrl?: string;
+  companyId: string;
   startDate: Date;
   endDate?: Date;
   location: string;
@@ -52,7 +58,7 @@ export type Project = {
   title: string;
   slug: string;
   image: ProjectImage;
-  company?: string;
+  companyId?: string;
   date: Date;
   role: string;
   description: string;

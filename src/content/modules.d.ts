@@ -1,4 +1,4 @@
-// HOME
+// PROJECTS
 
 declare module '$content/projects/*' {
   const data: import('./types').Project;
@@ -35,4 +35,11 @@ declare module '$content/vita/experience/*' {
 
 declare module '$content/vita/education/*' {
   export default experience;
+}
+
+// COMPANIES
+
+declare module '$content/companies/*' {
+  const data: import('./types').Company;
+  export default data;
 }

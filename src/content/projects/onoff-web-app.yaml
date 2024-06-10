@@ -2,7 +2,7 @@ type: 'on-location'
 level: 'professional'
 title: 'Onoff web app'
 slug: onoff-web-app
-company: 'Onoff Telecom'
+companyId: onoff
 date: 2022-11-15
 role: 'Frontend Engineer'
 image:

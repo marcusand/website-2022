@@ -3,13 +3,15 @@
   import { getFormattedDate } from '$lib/getFormattedDate';
   import LabelValue from '../../../components/LabelValue.svelte';
   import Navigation from './components/Navigation.svelte';
+  import companies from '$content/companies';
 
   export let data: Project;
 
   const imageBaseUrl = '/images/projects';
 
-  $: ({ title, date, description, image, links, role, slug, company, technologies } = data);
+  $: ({ title, date, description, image, links, role, slug, companyId, technologies } = data);
 
+  $: company = companies.find(({ id }) => id === companyId);
   $: imageSrc = `${imageBaseUrl}/${image.file}`;
   $: year = getFormattedDate(date, 'year');
   $: technologiesList = technologies?.join(', ');
@@ -28,7 +30,7 @@
 
   <div class="info">
     {#if company !== undefined}
-      <LabelValue label="company">{company}</LabelValue>
+      <LabelValue label="company">{company.name}</LabelValue>
     {/if}
 
     <LabelValue label="role">{role}</LabelValue>

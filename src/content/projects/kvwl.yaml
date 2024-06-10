@@ -2,7 +2,7 @@ type: 'on-location'
 level: 'professional'
 title: 'KVWL dipraxis'
 slug: kvwl
-company: 'MESO'
+companyId: meso
 date: 2020-12-01
 role: 'Application and Backend Developer'
 image:

@@ -2,7 +2,7 @@ type: 'on-location'
 level: 'professional'
 title: 'Onoff Click2Call chrome extension'
 slug: onoff-chrome-extension
-company: 'Onoff Telecom'
+companyId: onoff
 date: 2023-04-01
 role: 'Lead Frontend Engineer'
 image:
