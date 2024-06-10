@@ -7,5 +7,6 @@
 <h1>Contact</h1>
 <p>
   You can contact me at <a href="mailto:mail@marcusand.de">mail@marcusand.de</a><br />
-  or find me on <a href={link_linkedin}>linkedin</a> and <a href={link_github}>github</a>
+  or find me on <a href={link_linkedin} target="_blank">linkedin</a>
+  and <a href={link_github} target="_blank">github</a>
 </p>
