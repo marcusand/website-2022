@@ -4,6 +4,7 @@
   import LabelValue from '../../../components/LabelValue.svelte';
   import Navigation from './components/Navigation.svelte';
   import companies from '$content/companies';
+  import CompanyLink from '$components/CompanyLink.svelte';
 
   export let data: Project;
 
@@ -30,7 +31,9 @@
 
   <div class="info">
     {#if company !== undefined}
-      <LabelValue label="company">{company.name}</LabelValue>
+      <LabelValue label="company">
+        <CompanyLink {company} />
+      </LabelValue>
     {/if}
 
     <LabelValue label="role">{role}</LabelValue>

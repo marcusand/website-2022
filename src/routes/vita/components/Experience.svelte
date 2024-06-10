@@ -4,6 +4,7 @@
   import { getFormattedDate } from '$lib/getFormattedDate';
 
   import companies from '$content/companies';
+  import CompanyLink from '$components/CompanyLink.svelte';
 
   export let data: Experience;
 
@@ -16,18 +17,9 @@
 <div class="experience">
   <h3>{title}</h3>
   <p class="info">
-    {#if company !== undefined}
-      <span>
-        {#if company?.url !== undefined}
-          <a href={company.url} target="_blank">{company.name}</a>
-        {:else}
-          {company.name}
-        {/if}
-      </span>
+    <CompanyLink {company} />
 
-      <span class="separator">//</span>
-    {/if}
-
+    <span class="separator">//</span>
     <span>{location}</span>
     <span class="separator">//</span>
     <span>{start} — {end}</span>
