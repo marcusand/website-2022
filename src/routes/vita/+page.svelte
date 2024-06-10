@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Experience from '../../components/cv/Experience.svelte';
+  import Experience from './components/Experience.svelte';
   import experiences from '$content/cv/experience/index';
   import educations from '$content/cv/education/index';
 </script>
