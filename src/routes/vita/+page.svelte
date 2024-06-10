@@ -1,7 +1,7 @@
 <script lang="ts">
   import Experience from './components/Experience.svelte';
-  import experiences from '$content/cv/experience/index';
-  import educations from '$content/cv/education/index';
+  import experiences from '$content/vita/experience/index';
+  import educations from '$content/vita/education/index';
 </script>
 
 <h1>Vita</h1>

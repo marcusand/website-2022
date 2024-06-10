@@ -5,7 +5,7 @@ declare module '$content/projects/*' {
   export default data;
 }
 
-// CV
+// VITA
 
 declare module '*site.yaml' {
   const data: import('./types').Site;
@@ -17,22 +17,22 @@ declare module '*person.yaml' {
   export default data;
 }
 
-declare module '$content/cv/skills/*' {
+declare module '$content/vita/skills/*' {
   const data: import('./types').Skill;
   export default data;
 }
 
-declare module '$content/cv/hobbies.yaml' {
+declare module '$content/vita/hobbies.yaml' {
   const data: import('./types').Hobbies;
   export default data;
 }
 
 const experience: import('./types').Experience;
 
-declare module '$content/cv/experience/*' {
+declare module '$content/vita/experience/*' {
   export default experience;
 }
 
-declare module '$content/cv/education/*' {
+declare module '$content/vita/education/*' {
   export default experience;
 }
