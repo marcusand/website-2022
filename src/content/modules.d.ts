@@ -1,6 +1,6 @@
 // HOME
 
-declare module '$content/home/projects/*' {
+declare module '$content/projects/*' {
   const data: import('./types').Project;
   export default data;
 }

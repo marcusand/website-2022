@@ -1,5 +1,5 @@
 <script lang="ts">
-  import projects from '$content/home/projects';
+  import projects from '$content/projects';
 
   export let slug: string;
 
