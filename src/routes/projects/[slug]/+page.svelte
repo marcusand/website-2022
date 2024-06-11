@@ -63,6 +63,7 @@
 
   img {
     width: 100%;
+    max-height: 800px;
     object-fit: contain;
   }
 
