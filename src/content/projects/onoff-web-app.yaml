@@ -1,0 +1,28 @@
+type: 'on-location'
+level: 'professional'
+title: 'Onoff web app'
+slug: onoff-web-app
+companyId: onoff
+date: 2022-11-15
+role: 'Frontend Engineer'
+image:
+  file: 'onoff-web-app.png'
+  alt: Screenshot of the onoff web app
+  copyright: © Onoff
+links:
+  - https://www.onoffbusiness.com/en/features/applications-onoff-business/web-application/
+technologies:
+  - React
+  - Redux
+  - Typescript
+  - SCSS
+  - VoIP (SIP + WebRTC)
+  - Websockets (PubNub)
+  - Jest
+description:
+  As part of the web team at Onoff I contributed in the development and maintenance of the
+  onoff web client. Users could login with their Onoff account and do phone calls
+  and send SMS directly from the browser. Other features of the web client included a synced contact book,
+  voicemail feature, account settings and CRM integrations.<br>
+  In my role I implemented new features, refactored legacy code, did code reviews and contributed
+  to design discussions.

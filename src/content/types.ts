@@ -8,9 +8,8 @@ export type Person = {
   name: string;
   birthday: Date;
   location: string;
-  description: string;
-  description_cv: string;
-  links: Array<Link>;
+  link_linkedin: string;
+  link_github: string;
 };
 
 export type Site = {
@@ -20,9 +19,16 @@ export type Site = {
   keywords: Array<string>;
 };
 
+export type Company = {
+  id: string;
+  name: string;
+  nameShort?: string;
+  url?: string;
+};
+
 export type Experience = {
   title: string;
-  subtitle: string;
+  companyId: string;
   startDate: Date;
   endDate?: Date;
   location: string;
@@ -50,10 +56,12 @@ export type Project = {
   type: ProjectType;
   level: ProjectLevel;
   title: string;
+  slug: string;
   image: ProjectImage;
-  company?: string;
+  companyId?: string;
   date: Date;
   role: string;
   description: string;
-  links: Array<string>;
+  technologies?: Array<string>;
+  links?: Array<string>;
 };

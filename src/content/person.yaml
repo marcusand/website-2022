@@ -1,28 +1,5 @@
 name: Marcus Schreiter
 birthday: 1996-10-11
-location: Tallinn, Estonia
-description: <p>Hi, I'm Marcus!</p>
-  <p>
-  I am a software developer with a passion for frontend development, user interfaces and multimedia technology.
-  I love working on human-centered software and creating flawless user experiences.<br>
-  </p>
-  <p>
-  For the last few years I have mainly developed web apps, interactive exhibits and backend systems for museums and showrooms. Here you can see a selection of projects I most recently worked on.
-  </p>
-description_cv:
-  I am an experienced and dedicated software engineer with a degree in computer science and almost
-  four years of professional experience. I am a proactive, well-organised and communicative
-  coworker who is always eager to learn new things and solve unique challenges. I love working on
-  human-centered software and I'm always dedicated to create the best user experience possible. I
-  highly value best practices in software development and project management and I am convinced,
-  that great teamwork is the key to success.
-links:
-  - title: mail
-    alias: mail@marcusand.de
-    href: mailto:mail@marcusand.de
-  - title: github
-    alias: '@marcusand'
-    href: https://github.com/marcusand
-  - title: linkedin
-    alias: '@marcus-schreiter'
-    href: https://www.linkedin.com/in/marcus-schreiter-4b04a6182/
+location: Berlin
+link_linkedin: https://www.linkedin.com/in/marcus-schreiter/
+link_github: https://github.com/marcusand

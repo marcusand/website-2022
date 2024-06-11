@@ -14,10 +14,10 @@ export const getFormattedDate = (date: Date, format: Format): string => {
       return `${dayString}.${monthString}.${yearString}`;
     },
     short: (date: Date) => {
-      const monthString = numberStringWithPrefix(date.getMonth() + 1);
+      const monthString = date.toLocaleString('en-US', { month: 'short' });
       const yearString = date.getFullYear();
 
-      return `${monthString}/${yearString}`;
+      return `${monthString} ${yearString}`;
     },
     year: (date: Date) => {
       return `${date.getFullYear()}`;

@@ -9,7 +9,8 @@ const config = {
       pages: 'deploy/build'
     }),
     alias: {
-      '$content/*': 'src/content/*'
+      '$content/*': 'src/content/*',
+      '$components/*': 'src/components/*'
     }
   }
 };

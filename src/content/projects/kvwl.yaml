@@ -1,0 +1,19 @@
+type: 'on-location'
+level: 'professional'
+title: 'KVWL dipraxis'
+slug: kvwl
+companyId: meso
+date: 2020-12-01
+role: 'Application and Backend Developer'
+image:
+  file: 'kvwl.jpg'
+  alt: Person using a tablet in front of a wall-mounted screen
+  copyright: © MESO
+links:
+  - https://meso.design/en/projects/kvwl-educational-showroom-on-digitalization-in-healthcare
+description: As part of the project team I participated in the implementation
+  of an interconnected show room experience. Visitors are handed
+  tablets by which they can scan nfc tags to get certain information
+  or control wall screen applications in the exhibition. All tablets
+  and exhibits are in the same exhibition network and
+  communicate via mqtt with each other and a node-red backend.
