@@ -22,7 +22,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 0.25rem;
   }
 
   .site-title {
