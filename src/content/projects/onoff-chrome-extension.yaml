@@ -21,7 +21,7 @@ technologies:
 description:
   As part of the web team in Onoff I lead the development of the Click2Call chrome extension.
   What previously just existed as a MVP codebase, we decided to redo from scratch and over the course
-  of a few month brought it to the first release with excellent user feedback. The extension enabled
-  phone number highlighting and a click to call functionality on any website the user is on. <br>
+  of a few month brought it to the first release. We received great user feedback and continued to ship features.
+  The extension automatically detects and highlights phone numbers and provides a click to call functionality on any website the user is on. <br>
   In my role as a lead developer I set the foundation for the architecture, implemented features, did
   code reviews and actively contributed to design decisions.

@@ -10,6 +10,12 @@ image:
   alt: Screenshot of the "chronotopos romantik" showing an interactive map
 links:
   - https://freies-deutsches-hochstift.de/forschung/romantik-forschung/chronotopos-romantik/
+technologies:
+  - next.js
+  - tailwind
+  - Statamic CMS
+  - leaflet
+  - TileServerGL
 description: As part of the "Deutsche Romantik Museum" project we created an interactive
   web experience. The application is based on the same data set as one of the
   main exhibits in the museum and explores the whereabouts of over 30 protagonists

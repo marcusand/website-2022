@@ -9,6 +9,13 @@ image:
   file: 'drm.jpg'
   alt: Inside of the Deutsche Romantik Museum
   copyright: © MESO
+technologies:
+  - React
+  - Redux
+  - nw.js
+  - Statamic CMS
+  - MQTT/Websockets
+  - Node-RED
 links:
   - https://meso.design/en/news/die-sehnsucht-hat-allemal-recht
 description: I was part of the project team creating an exhibition consisting of
@@ -16,4 +23,4 @@ description: I was part of the project team creating an exhibition consisting of
   with a cms and deployment pipeline.
   My main focus in the project was on implementing a handful of
   interactive exhibits and a software for video playback.
-  All software was written using web technologies (react + redux + nw.js).
+  All software was written using web technologies.

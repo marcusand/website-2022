@@ -9,5 +9,8 @@ image:
   alt: Screenshot of the the "Sloe Paul" website showing a portrait of a person
 links:
   - https://sloepaul.net
+technologies:
+  - next.js
+  - tailwind
 description: A digital home for <em>Sloe Paul</em> where I am
   also part of the live band.

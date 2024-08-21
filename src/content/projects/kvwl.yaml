@@ -11,9 +11,14 @@ image:
   copyright: © MESO
 links:
   - https://meso.design/en/projects/kvwl-educational-showroom-on-digitalization-in-healthcare
+technologies:
+  - React
+  - nw.js
+  - MQTT/Websockets
+  - node-RED
+  - nfc
 description: As part of the project team I participated in the implementation
   of an interconnected show room experience. Visitors are handed
   tablets by which they can scan nfc tags to get certain information
-  or control wall screen applications in the exhibition. All tablets
-  and exhibits are in the same exhibition network and
-  communicate via mqtt with each other and a node-red backend.
+  or control wall screen applications in the exhibition.
+  All clients in the exhibition are interconnected and communicate via MQTT and a node-RED backend.
